@@ -1,0 +1,4 @@
+interface:
+  display_name: "系统架构设计师学习教练"
+  short_description: "面向前端开发者的系统架构零基础渐进式学习与备考辅导"
+  default_prompt: "使用 $coach-system-architect-study 从上次学习进度继续辅导我。"

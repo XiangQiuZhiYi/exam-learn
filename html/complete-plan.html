@@ -1,0 +1,1451 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="系统架构设计师 62 周完整备考计划单页版。">
+  <title>完整计划｜系统架构设计师备考计划</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span>SA</span><strong>系统架构设计师备考</strong></a>
+    <nav>
+      <a href="complete-plan.html">完整单页</a>
+      <button type="button" onclick="window.print()">打印 / PDF</button>
+    </nav>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <p class="eyebrow">章节导航</p>
+      <a href="01-goals-and-strategy.html"><span>01</span>目标与备考策略</a>
+<a href="02-resources.html"><span>02</span>教材、视频与工具</a>
+<a href="03-method-and-phases.html"><span>03</span>学习方法、时间与阶段</a>
+<a href="04-weekly-plan.html"><span>04</span>62 周学习计划</a>
+<a href="05-difficulties-and-practice.html"><span>05</span>知识难点与架构实践</a>
+<a href="06-three-subjects.html"><span>06</span>综合、案例与论文</a>
+<a href="07-review-and-recovery.html"><span>07</span>复盘、验收与进度恢复</a>
+<a href="08-exam-and-sources.html"><span>08</span>考务、启动清单与资料来源</a>
+      <a class="source-link" href="../系统架构设计师备考总计划.md">查看 Markdown 总文档</a>
+    </aside>
+    <main id="main">
+      <div class="chapter-meta"><span>2027 年 10 月目标</span><span>每周 8～10 小时</span></div>
+      <section class="week-jump" aria-label="周计划快速跳转">
+    <strong>快速跳转到周次</strong>
+    <div><a href="#w01">W01</a><a href="#w02">W02</a><a href="#w03">W03</a><a href="#w04">W04</a><a href="#w05">W05</a><a href="#w06">W06</a><a href="#w07">W07</a><a href="#w08">W08</a><a href="#w09">W09</a><a href="#w10">W10</a><a href="#w11">W11</a><a href="#w12">W12</a><a href="#w13">W13</a><a href="#w14">W14</a><a href="#w15">W15</a><a href="#w16">W16</a><a href="#w17">W17</a><a href="#w18">W18</a><a href="#w19">W19</a><a href="#w20">W20</a><a href="#w21">W21</a><a href="#w22">W22</a><a href="#w23">W23</a><a href="#w24">W24</a><a href="#w25">W25</a><a href="#w26">W26</a><a href="#w27">W27</a><a href="#w28">W28</a><a href="#w29">W29</a><a href="#w30">W30</a><a href="#w31">W31</a><a href="#w32">W32</a><a href="#w33">W33</a><a href="#w34">W34</a><a href="#w35">W35</a><a href="#w36">W36</a><a href="#w37">W37</a><a href="#w38">W38</a><a href="#w39">W39</a><a href="#w40">W40</a><a href="#w41">W41</a><a href="#w42">W42</a><a href="#w43">W43</a><a href="#w44">W44</a><a href="#w45">W45</a><a href="#w46">W46</a><a href="#w47">W47</a><a href="#w48">W48</a><a href="#w49">W49</a><a href="#w50">W50</a><a href="#w51">W51</a><a href="#w52">W52</a><a href="#w53">W53</a><a href="#w54">W54</a><a href="#w55">W55</a><a href="#w56">W56</a><a href="#w57">W57</a><a href="#w58">W58</a><a href="#w59">W59</a><a href="#w60">W60</a><a href="#w61">W61</a><a href="#w62">W62</a></div>
+  </section>
+      <article><h1 id="系统架构设计师-软考高级-2027-年-10-月备考总计划">系统架构设计师（软考高级）2027 年 10 月备考总计划<a class="heading-anchor" href="#系统架构设计师-软考高级-2027-年-10-月备考总计划" aria-label="链接到本节">#</a></h1>
+<blockquote>适用对象：前端开发背景，除前端相关知识外，计算机基础、后端、架构和论文均按零基础规划  <br>制订日期：2026-08-19  <br>目标考试：2027 年下半年系统架构设计师，暂按 2027 年 10 月下旬准备  <br>计划周期：2026-08-24—2027-10-31，共 62 周  <br>基准投入：每周 8～10 小时，冲刺期每周 12～15 小时  <br>版本：v1.0</blockquote>
+<hr>
+<h2 id="0-先看这一页-怎样执行这份计划">0. 先看这一页：怎样执行这份计划<a class="heading-anchor" href="#0-先看这一页-怎样执行这份计划" aria-label="链接到本节">#</a></h2>
+<p>这不是一张“看完多少小时视频”的清单，而是一套从零基础到能够通过三科考试的闭环：</p>
+<ol><li>用官方大纲确定考试边界。</li><li>用官方教程建立完整知识框架。</li><li>用一套主线视频降低理解门槛。</li><li>用章节题和历年真题校准考试深度。</li><li>用一个贯穿全程的小型架构实践，把抽象知识变成可以解释的经验。</li><li>从备考早期积累论文素材，后期再完成限时论文。</li><li>每四周验收一次，未达标就调整节奏，不靠“感觉学会了”。</li></ol>
+<p>执行时只遵守四条硬规则：</p>
+<ul><li>同一阶段只跟一套主线课程，不同时追两三位老师。</li><li>看完一节必须做题或产出图、表、说明，不能只看视频。</li><li>错题必须记录错误原因，不能只抄正确答案。</li><li>所有阶段都为综合、案例、论文三科服务，不能只刷选择题。</li></ul>
+<p>如果 2027 年正式考务安排、大纲或教材发生变化，以中国计算机技术职业资格网当年通知为准，并在正式通知发布后重新校准本计划。2027 年考试日期目前尚未公布，文中的 10 月日期只是规划锚点。</p>
+<hr>
+<h2 id="1-目标定义与通过标准">1. 目标定义与通过标准<a class="heading-anchor" href="#1-目标定义与通过标准" aria-label="链接到本节">#</a></h2>
+<h3 id="1-1-考试目标">1.1 考试目标<a class="heading-anchor" href="#1-1-考试目标" aria-label="链接到本节">#</a></h3>
+<p>当前高级资格设置《综合知识》《案例分析》《论文》三科，全部采用计算机化考试。按现行规则，必须在同一次考试中通过全部科目，不能保留单科成绩；常规地区的相对固定合格标准为试卷满分的 60%，满分 75 分时即 45 分合格。</p>
+<p>当前机考通常采用：</p>
+<div class="table-wrap"><table><thead><tr><th>科目</th><th>常见形式</th><th>当前训练基准</th></tr></thead><tbody><tr><td>综合知识</td><td>75 道单选题，含少量专业英语</td><td>训练 120 分钟完成，目标 52～58 分</td></tr><tr><td>案例分析</td><td>主观题，通常有必答和选答</td><td>训练 110～120 分钟，目标 50～55 分</td></tr><tr><td>论文</td><td>多个主题中选一题，机考写作</td><td>训练 120 分钟完成，目标稳定达到 48 分以上水平</td></tr></tbody></table></div>
+<p>综合知识与案例分析目前通常连考，总时长 240 分钟，综合知识提前交卷节省的时间可以留给案例分析。具体题量、选答规则、字数和交卷限制必须以 2027 年准考证及机考说明为准。</p>
+<h3 id="1-2-本计划的-完成-不是看完-而是达到以下状态">1.2 本计划的“完成”不是看完，而是达到以下状态<a class="heading-anchor" href="#1-2-本计划的-完成-不是看完-而是达到以下状态" aria-label="链接到本节">#</a></h3>
+<p>考前至少满足：</p>
+<ul><li>综合知识最近 5 套完整模拟平均不低于 52 分，最低不低于 48 分。</li><li>案例分析最近 5 套平均不低于 50 分，能够使用规范术语逐点作答。</li><li>至少完成 8 个论文主题的提纲、5 篇完整限时论文、3 篇二次重写稿。</li><li>120 分钟内能够在电脑上完成一篇结构完整、紧扣题意的论文。</li><li>连续完成 3 次“综合 + 案例 240 分钟、论文 120 分钟”的全真训练，三科均达到 48 分以上。</li><li>能够口头解释一套系统从需求、质量属性、架构决策到部署和运维的完整设计。</li></ul>
+<p>45 分只是合格线，训练目标必须留出题型变化、紧张和阅卷波动的缓冲。</p>
+<hr>
+<h2 id="2-当前基础分析与总体策略">2. 当前基础分析与总体策略<a class="heading-anchor" href="#2-当前基础分析与总体策略" aria-label="链接到本节">#</a></h2>
+<h3 id="2-1-已有优势">2.1 已有优势<a class="heading-anchor" href="#2-1-已有优势" aria-label="链接到本节">#</a></h3>
+<p>前端开发并不是“完全零基础”，以下能力可以直接迁移：</p>
+<ul><li>HTTP、浏览器、接口调用、Cookie、Token、跨域等网络概念。</li><li>JavaScript/TypeScript 编程、异步任务、事件机制和模块化。</li><li>组件化、前后端分离、构建部署、Git 和基本工程协作。</li><li>对用户体验、性能优化、缓存、异常处理有实际感受。</li><li>如果接触过 Node.js、Nginx、Docker、CI/CD，可直接转化为架构案例素材。</li></ul>
+<h3 id="2-2-主要缺口">2.2 主要缺口<a class="heading-anchor" href="#2-2-主要缺口" aria-label="链接到本节">#</a></h3>
+<div class="table-wrap"><table><thead><tr><th>缺口</th><th>对考试的影响</th><th>解决策略</th></tr></thead><tbody><tr><td>计算机组成、操作系统、数据结构薄弱</td><td>综合知识容易大量失分</td><td>先补概念主干，再做软考题，不按考研深度无限扩展</td></tr><tr><td>数据库、网络缺乏系统性</td><td>综合和案例都会考</td><td>理论、SQL/网络观察实验和真题同步进行</td></tr><tr><td>后端与分布式系统经验少</td><td>架构题只能背名词</td><td>用 TypeScript/Node.js 完成贯穿式架构实验</td></tr><tr><td>软件工程、UML、架构评估陌生</td><td>案例题无法规范表达</td><td>每周画图并写质量属性场景、架构决策记录</td></tr><tr><td>没有架构师岗位经历</td><td>论文缺少项目视角</td><td>从真实前端项目提取业务事实，再扩展到完整系统设计</td></tr><tr><td>没写过软考论文</td><td>最容易出现单科失败</td><td>从第 5 个月开始写段落，第 9 个月开始写提纲，最后 3 个月限时全文</td></tr></tbody></table></div>
+<h3 id="2-3-学习顺序">2.3 学习顺序<a class="heading-anchor" href="#2-3-学习顺序" aria-label="链接到本节">#</a></h3>
+<p>推荐顺序是：</p>
+<pre><code class="language-text">计算机基础
+  → 软件工程、数据库、网络、安全
+  → 架构风格与质量属性
+  → 云原生、微服务、数据与安全架构
+  → 真题和案例表达
+  → 论文与全真机考</code></pre>
+<p>不建议先学完整 Java 后端再开始架构。为了降低额外学习成本，实践项目使用熟悉的 TypeScript/Node.js；考试需要理解的是技术原理、适用场景和权衡，不是某种语言的框架 API。</p>
+<hr>
+<h2 id="3-教材-视频-题库与工具">3. 教材、视频、题库与工具<a class="heading-anchor" href="#3-教材-视频-题库与工具" aria-label="链接到本节">#</a></h2>
+<h3 id="3-1-必备教材-只买这三本即可开始">3.1 必备教材：只买这三本即可开始<a class="heading-anchor" href="#3-1-必备教材-只买这三本即可开始" aria-label="链接到本节">#</a></h3>
+<div class="table-wrap"><table><thead><tr><th>优先级</th><th>资料</th><th>用法</th></tr></thead><tbody><tr><td>必备</td><td>《系统架构设计师考试大纲》，全国计算机专业技术资格考试办公室编，清华大学出版社，ISBN 9787302620037</td><td>第一周通读；每个阶段开始前用它确认边界；不要拿辅导班讲义替代大纲</td></tr><tr><td>必备</td><td>《系统架构设计师教程（第 2 版）》，叶宏、鲍亮、宋胜利、蔺一帅，清华大学出版社，ISBN 9787302619925</td><td>全程主教材；第一遍建立框架，第二遍结合真题回查，第三遍只看薄弱章节</td></tr><tr><td>推荐</td><td>《系统架构设计师 2018 至 2022 年试题分析与解答》，计算机技术与软件专业技术资格考试研究部，清华大学出版社，ISBN 9787302674269</td><td>作为权威真题解析；2023 年后的题另从可靠题库补充</td></tr></tbody></table></div>
+<p>可选资料：</p>
+<ul><li>《系统架构设计师考试全程指导（第 2 版）》可用于操作系统、数据库、案例和论文的补充解释，但出版较早，不能替代新版大纲与新版教程。</li><li>不需要同时购买多套“5 天通关”“背诵宝典”“押题密卷”。最后两个月确有需要时，再选择一本压缩记忆资料。</li><li>不使用来历不明的盗版 PDF、所谓“内部题”和只给结论不给出处的答案。</li></ul>
+<h3 id="3-2-主线视频-选择一套-完整跟随">3.2 主线视频：选择一套，完整跟随<a class="heading-anchor" href="#3-2-主线视频-选择一套-完整跟随" aria-label="链接到本节">#</a></h3>
+<p>免费主线候选：</p>
+<ul><li><a href="https://www.bilibili.com/video/BV13E42137dU/">青石竹屋：系统架构师教程（综合知识、案例、论文）</a></li></ul>
+<p>它适合作为第一遍框架课，但视频标题中的年份不代表官方教材版本发生了更新。观看时必须以官方教程第 2 版目录为索引：视频与教材冲突时以官方大纲、教程和最新正式通知为准。</p>
+<p>如果免费课程试听 3～5 节后明显不适应，可以选择正规机构的新版系统课，但只在以下情况考虑付费：</p>
+<ul><li>自学连续三周无法维持进度。</li><li>需要作业批改、论文批改或固定直播约束。</li><li>课程明确对应 2022 年审定大纲和教程第 2 版，并覆盖案例、论文、机考训练。</li></ul>
+<p>购买前必须试听“系统质量属性与架构评估”和“案例分析”两节。能否讲清原理和答题理由，比宣传通过率重要。</p>
+<h3 id="3-3-零基础补课视频-遇到对应月份再看-不要一次收藏后全部开学">3.3 零基础补课视频：遇到对应月份再看，不要一次收藏后全部开学<a class="heading-anchor" href="#3-3-零基础补课视频-遇到对应月份再看-不要一次收藏后全部开学" aria-label="链接到本节">#</a></h3>
+<div class="table-wrap"><table><thead><tr><th>模块</th><th>推荐视频</th><th>只需重点观看</th></tr></thead><tbody><tr><td>计算机组成</td><td><a href="https://www.bilibili.com/video/BV1ps4y1d73V/">王道计算机考研：计算机组成原理</a>；需要更深入理解时参考<a href="https://www.bilibili.com/video/BV1Xq4y1h7UB/">哈工大刘宏伟课程</a></td><td>数据表示、存储层次、Cache、指令与流水线、中断、DMA；不做考研难题</td></tr><tr><td>操作系统</td><td><a href="https://www.bilibili.com/video/BV1YE411D7nH/">王道计算机考研：操作系统</a></td><td>进程线程、调度、同步互斥、PV、死锁、内存、页面置换、文件和 I/O</td></tr><tr><td>数据结构</td><td><a href="https://www.bilibili.com/video/BV1b7411N798/">王道计算机考研：数据结构</a></td><td>复杂度、线性结构、树、图、查找、哈希、排序；代码用 TypeScript 自己实现小例子</td></tr><tr><td>计算机网络</td><td><a href="https://www.bilibili.com/video/BV19E411D78Q/">王道计算机考研：计算机网络</a>；图示理解可参考<a href="https://www.bilibili.com/video/BV18g411D7Fm/">湖科大计算机网络</a></td><td>分层、交换、IP/子网、路由、TCP/UDP、DNS、HTTP、常见安全协议</td></tr><tr><td>数据库</td><td><a href="https://www.bilibili.com/video/BV1HY4y1b72A/">哈工大战德臣：数据库系统</a></td><td>关系模型、关系代数、SQL、范式、事务、并发、恢复、索引和查询优化</td></tr><tr><td>操作系统进阶</td><td><a href="https://www.bilibili.com/video/BV12CV1zoE41/">南京大学蒋炎岩：2025 操作系统原理</a></td><td>仅当基本概念仍无法理解时选看进程、地址空间、文件系统；它很优秀，但明显超出软考所需深度</td></tr></tbody></table></div>
+<p>视频使用原则：</p>
+<ul><li>1.25～1.5 倍速观看，暂停画图和做题的时间不计入视频时长。</li><li>一个知识点看 30～60 分钟仍不懂时，换一次解释来源；不要连续换五套课程。</li><li>补课视频只为解决具体难点，不要求“全集打卡”。</li><li>每看完一个小节，至少完成 5～10 道对应题或一个小实验。</li></ul>
+<h3 id="3-4-真题与题库">3.4 真题与题库<a class="heading-anchor" href="#3-4-真题与题库" aria-label="链接到本节">#</a></h3>
+<p>真题按三层使用：</p>
+<ol><li><strong>章节练习题</strong>：学完一个知识点立即做，目的是暴露理解问题。</li><li><strong>分类真题</strong>：完成一个模块后做，目的是认识命题方式。</li><li><strong>完整年度真题</strong>：中后期按时间完成，目的是训练取舍和节奏。</li></ol>
+<p>真题年份分配：</p>
+<ul><li>2016—2020：用于第一轮分类练习和早期摸底。</li><li>2021—2023：用于强化和案例专项。</li><li>2024—2026：留到 2027 年 6 月以后做整套模拟。</li><li>2027 上半年：若当年正常开考并有可靠回忆题，留到考前 6～8 周做最后校准。</li></ul>
+<p>选择在线题库时检查四点：标明考试年份、答案有解释、错误可以收藏、解析出现争议时能查看多个来源。机构回忆题可能不完整，不能把单一来源当成官方原题。</p>
+<h3 id="3-5-实践工具">3.5 实践工具<a class="heading-anchor" href="#3-5-实践工具" aria-label="链接到本节">#</a></h3>
+<p>实践项目优先使用已经熟悉或容易上手的工具：</p>
+<ul><li>TypeScript + Node.js（Express、Fastify 或 NestJS 任选其一）。</li><li>PostgreSQL 或 MySQL，选择一种即可。</li><li>Redis。</li><li>RabbitMQ；如果已经熟悉 Kafka，也可以替换。</li><li>Nginx。</li><li>Docker Compose。</li><li>k6 或 Apache JMeter 做简单压力测试。</li><li>Mermaid、draw.io 或 PlantUML 画图。</li><li>Git 管理实践与笔记。</li></ul>
+<p>不要把时间耗在框架选型。实践项目的评分标准是能说明需求、架构、权衡和结果，不是代码量。</p>
+<hr>
+<h2 id="4-学习闭环与笔记系统">4. 学习闭环与笔记系统<a class="heading-anchor" href="#4-学习闭环与笔记系统" aria-label="链接到本节">#</a></h2>
+<h3 id="4-1-每个知识单元采用-学-画-题-讲-复盘">4.1 每个知识单元采用“学—画—题—讲—复盘”<a class="heading-anchor" href="#4-1-每个知识单元采用-学-画-题-讲-复盘" aria-label="链接到本节">#</a></h3>
+<ol><li><strong>学</strong>：看官方教程和主线视频，首次接触时只抓概念、关系和典型应用。</li><li><strong>画</strong>：画一张结构图、流程图或对比表。</li><li><strong>题</strong>：完成 10～30 道章节题，案例模块至少做一道主观题。</li><li><strong>讲</strong>：不看资料，用 3 分钟向“没有后端经验的前端同事”解释它。</li><li><strong>复盘</strong>：在第 1、3、7、14、30 天回顾，直到能主动回忆。</li></ol>
+<h3 id="4-2-建议的项目目录">4.2 建议的项目目录<a class="heading-anchor" href="#4-2-建议的项目目录" aria-label="链接到本节">#</a></h3>
+<p>后续学习资料按下面结构维护：</p>
+<pre><code class="language-text">系统架构设计师/
+├── 系统架构设计师备考总计划.md
+├── 01-知识笔记/
+│   ├── 计算机系统.md
+│   ├── 操作系统.md
+│   ├── 数据结构与算法.md
+│   ├── 计算机网络.md
+│   ├── 数据库.md
+│   ├── 软件工程与UML.md
+│   ├── 信息安全.md
+│   └── 系统架构.md
+├── 02-错题本/
+│   ├── 综合知识错题.md
+│   └── 案例分析错题.md
+├── 03-案例分析/
+├── 04-论文/
+│   ├── 项目素材库.md
+│   ├── 论文提纲库.md
+│   └── 限时论文/
+├── 05-实践项目/
+├── 06-模拟考试/
+└── 07-月度复盘/</code></pre>
+<h3 id="4-3-错题记录格式">4.3 错题记录格式<a class="heading-anchor" href="#4-3-错题记录格式" aria-label="链接到本节">#</a></h3>
+<p>每道错题只记录这些内容：</p>
+<pre><code class="language-text">题目来源：年份 / 科目 / 题号
+知识点：
+我的答案与理由：
+正确答案与理由：
+错误类型：概念不清 / 混淆 / 计算错误 / 审题错误 / 时间不足 / 完全陌生
+最小纠正结论：一句话写清
+关联知识：
+复习日期：D1 / D3 / D7 / D14 / D30</code></pre>
+<p>如果只抄题和答案，错题本很快会变成另一本不会看的题库。</p>
+<h3 id="4-4-记忆策略">4.4 记忆策略<a class="heading-anchor" href="#4-4-记忆策略" aria-label="链接到本节">#</a></h3>
+<ul><li>需要理解：进程与线程、事务隔离、架构风格、质量属性、分布式一致性。</li><li>需要“理解后记忆”：开发模型、UML 图用途、安全机制、可靠性公式。</li><li>可以直接记忆：标准、法律、知识产权年限、专业英语、高频名词。</li><li>任何需要背诵的内容都先做成问题，例如“可用性常用架构策略有哪些”，不要复制一整段课文。</li></ul>
+<hr>
+<h2 id="5-每周时间安排">5. 每周时间安排<a class="heading-anchor" href="#5-每周时间安排" aria-label="链接到本节">#</a></h2>
+<h3 id="5-1-标准周-8-10-小时">5.1 标准周：8～10 小时<a class="heading-anchor" href="#5-1-标准周-8-10-小时" aria-label="链接到本节">#</a></h3>
+<div class="table-wrap"><table><thead><tr><th>时间</th><th>内容</th><th>时长</th></tr></thead><tbody><tr><td>周一</td><td>主线课程 + 教材对应章节</td><td>60 分钟</td></tr><tr><td>周二</td><td>主线课程 + 结构图或对比表</td><td>60 分钟</td></tr><tr><td>周三</td><td>章节题 15～25 道 + 错题复盘</td><td>60 分钟</td></tr><tr><td>周四</td><td>补充课程或案例知识</td><td>60 分钟</td></tr><tr><td>周五</td><td>休息；只做 15 分钟闪卡或英语</td><td>0～30 分钟</td></tr><tr><td>周六</td><td>重点学习、案例或真题</td><td>2.5～3 小时</td></tr><tr><td>周日</td><td>架构实践、论文素材、周复盘</td><td>2～2.5 小时</td></tr></tbody></table></div>
+<p>工作日采用 50 分钟专注 + 10 分钟回忆。周末每 90 分钟休息 15 分钟。</p>
+<h3 id="5-2-忙碌周-最低-4-小时">5.2 忙碌周：最低 4 小时<a class="heading-anchor" href="#5-2-忙碌周-最低-4-小时" aria-label="链接到本节">#</a></h3>
+<p>不能正常执行时，只保留：</p>
+<ul><li>90 分钟主线教材/视频。</li><li>60 分钟章节题。</li><li>60 分钟错题与主动回忆。</li><li>30 分钟论文素材或案例关键词。</li></ul>
+<p>忙碌周结束后不熬夜补齐全部视频。先补本周验收项，再继续下一周。</p>
+<h3 id="5-3-冲刺周-12-15-小时">5.3 冲刺周：12～15 小时<a class="heading-anchor" href="#5-3-冲刺周-12-15-小时" aria-label="链接到本节">#</a></h3>
+<p>从 2027 年 8 月起逐步提高到：</p>
+<ul><li>工作日每天 1～1.5 小时。</li><li>周六 4 小时连考训练。</li><li>周日 2 小时论文 + 2 小时复盘。</li></ul>
+<hr>
+<h2 id="6-阶段总览">6. 阶段总览<a class="heading-anchor" href="#6-阶段总览" aria-label="链接到本节">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>阶段</th><th>周期</th><th>核心任务</th><th>阶段验收</th></tr></thead><tbody><tr><td>P0 启动与诊断</td><td>W01～W02</td><td>了解考试、准备资料、做基线测试、建立笔记系统</td><td>完成一套摸底；形成个人差距表和真实项目清单</td></tr><tr><td>P1 计算机与软件基础</td><td>W03～W19</td><td>组成、操作系统、数据结构、网络、数据库</td><td>模块题正确率达到 60%；能画出 Web 请求全链路</td></tr><tr><td>P2 软件工程与架构核心</td><td>W20～W36</td><td>软件工程、UML、安全、架构风格、质量属性、评估、可靠性</td><td>混合选择题达到 50 分左右；案例开始形成规范表达</td></tr><tr><td>P3 专题架构与第一轮真题</td><td>W37～W45</td><td>信息系统、分层、云原生、SOA、微服务、安全、大数据架构</td><td>官方教程完成第一轮；至少完成 3 套整题和 8 道案例</td></tr><tr><td>P4 案例与论文强化</td><td>W46～W54</td><td>案例分类、项目素材、八类论文提纲、完整论文</td><td>案例稳定 45+；完成 3 篇限时全文和 8 个提纲</td></tr><tr><td>P5 全真模拟与补弱</td><td>W55～W60</td><td>连考、论文、错题压缩、2027 新题校准</td><td>连续 3 次全科 48+；论文输入速度和时间稳定</td></tr><tr><td>P6 考前与考试</td><td>W61～W62</td><td>状态保持、考务检查、轻量复习</td><td>按官方安排完成考试</td></tr></tbody></table></div>
+<hr>
+<h2 id="7-62-周详细执行计划">7. 62 周详细执行计划<a class="heading-anchor" href="#7-62-周详细执行计划" aria-label="链接到本节">#</a></h2>
+<p>本章是整个备考计划的日常执行入口。每一周都把目标、教材、视频、工具、难点、任务、三科训练、交付物和验收放在同一个单元中；执行时不需要再往返其他章节查找。</p>
+<h3 id="使用规则">使用规则<a class="heading-anchor" href="#使用规则" aria-label="链接到本节">#</a></h3>
+<ol><li>周一开始前先读“本周目标”和“验收标准”，再开始看视频。</li><li>学习支持只选列出的主线内容；同一知识点不要同时跟多套课。</li><li>任务清单按输入、训练、实践/表达、复盘组织，允许换到其他日期，但不能删除输出。</li><li>三科融合从早期就开始；论文前期只积累真实素材，不要求过早写全文。</li><li>周日用交付物和验收判断是否完成。未达标时先执行最低完成线，再决定是否顺延。</li><li>每周默认另做 3 次 10 分钟专业英语、一次到期错题复习和一次 15 分钟周复盘。</li></ol>
+<h3 id="本章资源快捷入口">本章资源快捷入口<a class="heading-anchor" href="#本章资源快捷入口" aria-label="链接到本节">#</a></h3>
+<ul><li><a href="https://www.tup.tsinghua.edu.cn/booksCenter/book_09190401.html">官方《系统架构设计师考试大纲》</a></li><li><a href="https://www.tup.tsinghua.edu.cn/bookscenter/book_09190101.html">官方《系统架构设计师教程（第 2 版）》</a></li><li><a href="https://www.bilibili.com/video/BV13E42137dU/">主线：系统架构师教程（综合、案例、论文）</a></li><li><a href="https://www.bilibili.com/video/BV1ps4y1d73V/">王道：计算机组成原理</a></li><li><a href="https://www.bilibili.com/video/BV1YE411D7nH/">王道：操作系统</a></li><li><a href="https://www.bilibili.com/video/BV1b7411N798/">王道：数据结构</a></li><li><a href="https://www.bilibili.com/video/BV19E411D78Q/">王道：计算机网络</a></li><li><a href="https://www.bilibili.com/video/BV18g411D7Fm/">湖科大：计算机网络</a></li><li><a href="https://www.bilibili.com/video/BV1HY4y1b72A/">哈工大：数据库系统</a></li></ul>
+<blockquote>每周“视频支持”只要求观看对应主题，不要求把上述长课程从头到尾全部看完。</blockquote>
+<hr>
+<h3 id="p0-启动与诊断-w01-w02">P0：启动与诊断（W01～W02）<a class="heading-anchor" href="#p0-启动与诊断-w01-w02" aria-label="链接到本节">#</a></h3>
+<ul><li><strong>阶段目标：</strong> 了解考试、建立基线、搭好笔记与项目素材系统。</li><li><strong>阶段核心支持：</strong> 考试大纲、官方教程目录、主线课程导学、2020 年真题。</li><li><strong>阶段出口：</strong> 形成基线成绩、差距表、固定时间表、真实项目清单和实践题目。</li></ul>
+<h4 id="w01">W01｜认识考试并建立基线（2026-08-24—08-30）<a class="heading-anchor" href="#w01" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 说清三科考什么、当前差距在哪里，并获得第一份可量化基线。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持">学习支持<a class="heading-anchor" href="#学习支持" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 《考试大纲》考试说明与范围；官方教程目录、第 1 章。</li><li><strong>视频支持：</strong> 主线课程的考试介绍、备考策略和三科导学；暂不观看知识精讲。</li><li><strong>工具 / 模板支持：</strong> 2020 年综合真题、计时器、基线成绩表、日历。</li></ul>
+<h5 id="本周关键难点">本周关键难点<a class="heading-anchor" href="#本周关键难点" aria-label="链接到本节">#</a></h5>
+<p>首次摸底分数低很正常；本周只定位问题，不因为错题多而逐题补课。</p>
+<h5 id="任务清单">任务清单<a class="heading-anchor" href="#任务清单" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（1.5h）：通读大纲考试说明、教程 20 章目录和三科题型。</li><li>摸底（2.5h）：限时完成 2020 年综合知识；不会的题直接标记，禁止边查边做。</li><li>分析（2h）：按组成/操作系统/网络/数据库/软件工程/架构/安全等模块统计得分。</li><li>计划（1h）：在日历中固定四个工作日晚间和一个周末学习时段。</li></ol>
+<h5 id="三科融合">三科融合<a class="heading-anchor" href="#三科融合" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：完成基线卷并统计模块得分。</li><li>案例：只浏览一套题，识别题型和选答方式。</li><li>论文：只了解题目结构与机考时长，不写正文。</li></ul>
+<h5 id="本周交付物">本周交付物<a class="heading-anchor" href="#本周交付物" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="0"><span>基线成绩表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="1"><span>个人薄弱模块排序</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="2"><span>每周固定学习时间表</span></label></li></ul>
+<h5 id="验收标准">验收标准<a class="heading-anchor" href="#验收标准" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="3"><span>综合卷在规定时间内独立完成。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="4"><span>所有错题均归入至少一个模块。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="5"><span>能在 5 分钟内向别人说明三科差异和同次通过规则。</span></label></li></ul>
+<h5 id="忙碌周最低完成线">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线" aria-label="链接到本节">#</a></h5>
+<p>完成大纲考试说明、60 道以上摸底题和模块得分统计。</p>
+<h4 id="w02">W02｜搭建学习系统与项目素材库（2026-08-31—09-06）<a class="heading-anchor" href="#w02" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 让后续学习有固定入口、记录格式和可贯穿案例/论文的真实项目。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-2">学习支持<a class="heading-anchor" href="#学习支持-2" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 1 章；本计划第 3、4、9、12 章中的资源与模板。</li><li><strong>视频支持：</strong> 主线课程导学；只试听 3～5 节以确认讲解风格是否适合。</li><li><strong>工具 / 模板支持：</strong> Markdown、Git、错题模板、项目素材表、Mermaid 或 draw.io。</li></ul>
+<h5 id="本周关键难点-2">本周关键难点<a class="heading-anchor" href="#本周关键难点-2" aria-label="链接到本节">#</a></h5>
+<p>容易花大量时间美化笔记；目录和模板够用即可，重点是填入第一条真实内容。</p>
+<h5 id="任务清单-2">任务清单<a class="heading-anchor" href="#任务清单-2" aria-label="链接到本节">#</a></h5>
+<ol><li>系统（1.5h）：建立知识、错题、案例、论文、实践和月度复盘目录。</li><li>项目（2h）：整理两个真实项目的业务、规模、职责、技术、问题和结果。</li><li>实践（2h）：选定贯穿项目，写用户、核心用例和三条非功能目标。</li><li>试运行（1.5h）：按错题模板录入 W01 的 10 道典型错题并安排 D1/D3/D7 复习。</li></ol>
+<h5 id="三科融合-2">三科融合<a class="heading-anchor" href="#三科融合-2" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：把基线错题映射到教程章节。</li><li>案例：建立案例答案文件并录入一道题干。</li><li>论文：建立项目素材表，先保证事实真实。</li></ul>
+<h5 id="本周交付物-2">本周交付物<a class="heading-anchor" href="#本周交付物-2" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="6"><span>标准目录结构</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="7"><span>两个真实项目素材表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="8"><span>贯穿实践项目一页纸</span></label></li></ul>
+<h5 id="验收标准-2">验收标准<a class="heading-anchor" href="#验收标准-2" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="9"><span>所有学习资料有唯一存放位置。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="10"><span>两个项目各至少填写 6 个素材维度。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="11"><span>下周所需教材、视频和题目均已准备。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-2">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-2" aria-label="链接到本节">#</a></h5>
+<p>建立目录、错题模板并完成一个真实项目素材表。</p>
+<hr>
+<h3 id="p1-计算机与软件基础-w03-w19">P1：计算机与软件基础（W03～W19）<a class="heading-anchor" href="#p1-计算机与软件基础-w03-w19" aria-label="链接到本节">#</a></h3>
+<ul><li><strong>阶段目标：</strong> 补齐组成、操作系统、数据结构、网络和数据库五大基础。</li><li><strong>阶段核心支持：</strong> 官方教程第 2、6 章；王道计组/操作系统/数据结构/网络；哈工大数据库。</li><li><strong>阶段出口：</strong> 五模块混合综合题达到 45 分左右，能解释一次 Web 请求的完整技术链路。</li></ul>
+<h4 id="w03">W03｜数据表示与校验（2026-09-07—09-13）<a class="heading-anchor" href="#w03" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 掌握数制、补码和校验的基本原理，能够完成软考典型题。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-3">学习支持<a class="heading-anchor" href="#学习支持-3" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章中数据表示、计算机组成与校验码部分。</li><li><strong>视频支持：</strong> 王道计组：数制与编码、定点/浮点、奇偶校验、海明码和 CRC 对应小节。</li><li><strong>工具 / 模板支持：</strong> TypeScript/Node.js、章节题 25～30 道、公式卡。</li></ul>
+<h5 id="本周关键难点-3">本周关键难点<a class="heading-anchor" href="#本周关键难点-3" aria-label="链接到本节">#</a></h5>
+<p>补码运算和校验码容易只记步骤；先解释为什么需要，再练计算。</p>
+<h5 id="任务清单-3">任务清单<a class="heading-anchor" href="#任务清单-3" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：精读对应教材并看视频，画数据表示关系图。</li><li>训练（2h）：完成至少 25 道题，计算过程必须写出位数和规则。</li><li>实践（1.5h）：用 TypeScript 实现二/十/十六进制转换与奇偶校验。</li><li>复盘（1h）：整理原码/反码/补码和三种校验方式对比表。</li></ol>
+<h5 id="三科融合-3">三科融合<a class="heading-anchor" href="#三科融合-3" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：数制、补码、浮点和校验选择题。</li><li>案例：能解释数据传输为何需要检错/纠错。</li><li>论文：记录数据完整性可采用的校验措施，暂不写段落。</li></ul>
+<h5 id="本周交付物-3">本周交付物<a class="heading-anchor" href="#本周交付物-3" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="12"><span>数据表示一页图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="13"><span>可运行的小程序</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="14"><span>本周错题卡</span></label></li></ul>
+<h5 id="验收标准-3">验收标准<a class="heading-anchor" href="#验收标准-3" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="15"><span>章节题正确率不低于 55%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="16"><span>不看资料解释补码存在的意义。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="17"><span>能够区分奇偶校验、海明码和 CRC 的能力边界。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-3">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-3" aria-label="链接到本节">#</a></h5>
+<p>完成教材重点、15 道题和一张对比表。</p>
+<h4 id="w04">W04｜存储层次与 Cache（2026-09-14—09-20）<a class="heading-anchor" href="#w04" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 理解局部性、Cache 和虚拟存储，并能计算平均访问时间。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-4">学习支持<a class="heading-anchor" href="#学习支持-4" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章存储系统、Cache、地址映射和虚拟存储。</li><li><strong>视频支持：</strong> 王道计组或哈工大计组：主存、Cache、映射方式和虚拟存储选看。</li><li><strong>工具 / 模板支持：</strong> Cache 计算题、CPU—Cache—内存—磁盘结构图。</li></ul>
+<h5 id="本周关键难点-4">本周关键难点<a class="heading-anchor" href="#本周关键难点-4" aria-label="链接到本节">#</a></h5>
+<p>命中率题易漏单位和访问层次；每题先画访问路径再代公式。</p>
+<h5 id="任务清单-4">任务清单<a class="heading-anchor" href="#任务清单-4" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：完成存储层次与 Cache 教材/视频。</li><li>训练（2h）：完成命中率、平均访问时间和地址映射题不少于 20 道。</li><li>表达（1.5h）：画存储层次图，为每层标注容量、速度、成本和管理者。</li><li>复盘（1h）：重做全部计算错题并写出错误类型。</li></ol>
+<h5 id="三科融合-4">三科融合<a class="heading-anchor" href="#三科融合-4" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：Cache 命中率、映射和虚拟地址题。</li><li>案例：把缓存与性能质量属性关联。</li><li>论文：积累一条‘使用缓存改善响应时间但增加一致性风险’素材。</li></ul>
+<h5 id="本周交付物-4">本周交付物<a class="heading-anchor" href="#本周交付物-4" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="18"><span>存储层次图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="19"><span>Cache 公式卡</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="20"><span>20 道计算记录</span></label></li></ul>
+<h5 id="验收标准-4">验收标准<a class="heading-anchor" href="#验收标准-4" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="21"><span>计算题正确率不低于 60%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="22"><span>能解释时间局部性和空间局部性。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="23"><span>能说明 Cache 与 Redis 的相同目标和不同层次。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-4">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-4" aria-label="链接到本节">#</a></h5>
+<p>完成 12 道典型题和存储层次图。</p>
+<h4 id="w05">W05｜指令、流水线、I/O 与可靠性计算（2026-09-21—09-27）<a class="heading-anchor" href="#w05" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 掌握 CPU 执行与 I/O 基础，拿下流水线、性能和串并联系统计算题。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-5">学习支持<a class="heading-anchor" href="#学习支持-5" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章指令系统、流水线、中断、DMA、性能评价与可靠性基础。</li><li><strong>视频支持：</strong> 王道计组：指令周期、流水线、中断和 DMA；主线课可靠性计算。</li><li><strong>工具 / 模板支持：</strong> 计算公式一页纸、10～15 道专项计算题。</li></ul>
+<h5 id="本周关键难点-5">本周关键难点<a class="heading-anchor" href="#本周关键难点-5" aria-label="链接到本节">#</a></h5>
+<p>公式多但题型固定；必须记录适用前提，不能只背字母。</p>
+<h5 id="任务清单-5">任务清单<a class="heading-anchor" href="#任务清单-5" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：完成指令、流水线、中断和 DMA 主干知识。</li><li>训练（2.5h）：流水线吞吐/加速比、串并联可靠度各至少 5 题。</li><li>表达（1h）：画程序查询、中断、DMA 三种 I/O 方式对比图。</li><li>复盘（1h）：闭卷重建公式卡，并对错题做单位检查。</li></ol>
+<h5 id="三科融合-5">三科融合<a class="heading-anchor" href="#三科融合-5" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：流水线、RISC/CISC、中断、DMA 与可靠度计算。</li><li>案例：能够从性能和可靠性解释硬件/部署选择。</li><li>论文：保存可靠性计算与冗余设计素材。</li></ul>
+<h5 id="本周交付物-5">本周交付物<a class="heading-anchor" href="#本周交付物-5" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="24"><span>计算公式一页纸</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="25"><span>I/O 对比图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="26"><span>专项计算记录</span></label></li></ul>
+<h5 id="验收标准-5">验收标准<a class="heading-anchor" href="#验收标准-5" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="27"><span>闭卷完成 10 道典型计算题，至少正确 6 道。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="28"><span>能区分中断和 DMA 的 CPU 参与程度。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="29"><span>三天后重做错题正确率达到 80%。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-5">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-5" aria-label="链接到本节">#</a></h5>
+<p>掌握流水线公式、完成 8 道题和 I/O 对比表。</p>
+<h4 id="w06">W06｜进程、线程与调度（2026-09-28—10-04）<a class="heading-anchor" href="#w06" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 建立操作系统核心对象和状态转换模型，能分析典型调度过程。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-6">学习支持<a class="heading-anchor" href="#学习支持-6" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章操作系统：进程、线程、状态、调度。</li><li><strong>视频支持：</strong> 王道操作系统：进程与线程、状态转换、处理机调度。</li><li><strong>工具 / 模板支持：</strong> 浏览器主线程/Web Worker、活动监视器或系统进程工具、调度题。</li></ul>
+<h5 id="本周关键难点-6">本周关键难点<a class="heading-anchor" href="#本周关键难点-6" aria-label="链接到本节">#</a></h5>
+<p>阻塞、挂起、就绪易混；用事件和资源是否满足来判断状态。</p>
+<h5 id="任务清单-6">任务清单<a class="heading-anchor" href="#任务清单-6" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习进程/线程、状态与调度算法。</li><li>训练（2h）：完成状态判断和 FCFS/SJF/优先级/时间片题 20 道。</li><li>实践（1.5h）：观察系统进程与线程，并对比浏览器主线程和 Worker。</li><li>表达（1h）：闭卷画状态转换图并说明每条边的触发条件。</li></ol>
+<h5 id="三科融合-6">三科融合<a class="heading-anchor" href="#三科融合-6" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：状态、调度指标和算法计算。</li><li>案例：能从并发和资源隔离解释进程/线程选择。</li><li>论文：记录前端 Worker 或并发处理带来的性能经验。</li></ul>
+<h5 id="本周交付物-6">本周交付物<a class="heading-anchor" href="#本周交付物-6" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="30"><span>进程状态图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="31"><span>调度算法对比表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="32"><span>系统观察记录</span></label></li></ul>
+<h5 id="验收标准-6">验收标准<a class="heading-anchor" href="#验收标准-6" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="33"><span>状态与调度题正确率不低于 60%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="34"><span>能准确区分并发与并行。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="35"><span>能说明进程和线程在隔离、切换成本上的权衡。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-6">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-6" aria-label="链接到本节">#</a></h5>
+<p>完成状态图、四种调度算法对比和 12 道题。</p>
+<h4 id="w07">W07｜同步互斥、PV 与死锁（2026-10-05—10-11）<a class="heading-anchor" href="#w07" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 能够从资源依赖出发分析同步关系，独立完成基础 PV 和死锁题。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-7">学习支持<a class="heading-anchor" href="#学习支持-7" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章进程同步、信号量、死锁。</li><li><strong>视频支持：</strong> 王道操作系统：同步互斥、信号量、经典同步问题、死锁和银行家算法。</li><li><strong>工具 / 模板支持：</strong> 生产者消费者/读者写者图解、PV 伪代码、资源分配图。</li></ul>
+<h5 id="本周关键难点-7">本周关键难点<a class="heading-anchor" href="#本周关键难点-7" aria-label="链接到本节">#</a></h5>
+<p>直接背 P/V 顺序最容易错；先标出谁等待谁、缓冲区和互斥资源。</p>
+<h5 id="任务清单-7">任务清单<a class="heading-anchor" href="#任务清单-7" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：理解临界区、信号量语义和死锁四条件。</li><li>训练（2.5h）：PV 题不少于 10 道，死锁/银行家题不少于 8 道。</li><li>实践（1h）：用 Promise/队列类比生产者消费者，写一段伪代码。</li><li>复盘（1h）：对每道错题补一张资源依赖小图。</li></ol>
+<h5 id="三科融合-7">三科融合<a class="heading-anchor" href="#三科融合-7" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：PV 操作、死锁条件和银行家算法。</li><li>案例：解释并发访问下的同步、互斥和死锁规避。</li><li>论文：积累并发控制和异步队列素材。</li></ul>
+<h5 id="本周交付物-7">本周交付物<a class="heading-anchor" href="#本周交付物-7" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="36"><span>经典同步问题模板</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="37"><span>资源依赖图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="38"><span>PV 错题集</span></label></li></ul>
+<h5 id="验收标准-7">验收标准<a class="heading-anchor" href="#验收标准-7" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="39"><span>PV/死锁题整体正确率不低于 60%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="40"><span>能闭卷写出生产者消费者核心同步关系。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="41"><span>能说明预防、避免、检测和解除死锁的差别。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-7">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-7" aria-label="链接到本节">#</a></h5>
+<p>完成 6 道 PV、4 道死锁题和一张资源依赖图。</p>
+<h4 id="w08">W08｜内存管理与页面置换（2026-10-12—10-18）<a class="heading-anchor" href="#w08" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 掌握分页、分段和虚拟存储，稳定完成页面置换手算题。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-8">学习支持<a class="heading-anchor" href="#学习支持-8" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章内存管理、分页分段、虚拟存储和页面置换。</li><li><strong>视频支持：</strong> 王道操作系统：连续分配、分页、分段、虚拟内存和置换算法。</li><li><strong>工具 / 模板支持：</strong> Node.js LRU 小程序、FIFO/LRU/OPT 手算表。</li></ul>
+<h5 id="本周关键难点-8">本周关键难点<a class="heading-anchor" href="#本周关键难点-8" aria-label="链接到本节">#</a></h5>
+<p>页号、页框、地址和缺页次数容易混；固定使用统一表格逐步记录。</p>
+<h5 id="任务清单-8">任务清单<a class="heading-anchor" href="#任务清单-8" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：完成分页、分段、地址转换和虚拟存储。</li><li>训练（2h）：FIFO/LRU/OPT 各完成至少 4 题。</li><li>实践（1.5h）：用 Node.js 实现简化 LRU，打印命中与淘汰过程。</li><li>复盘（1h）：整理三种算法的原则、优缺点和 Belady 异常。</li></ol>
+<h5 id="三科融合-8">三科融合<a class="heading-anchor" href="#三科融合-8" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：地址转换、缺页和页面置换。</li><li>案例：把 LRU 与业务缓存淘汰关联。</li><li>论文：记录缓存容量与命中率权衡素材。</li></ul>
+<h5 id="本周交付物-8">本周交付物<a class="heading-anchor" href="#本周交付物-8" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="42"><span>LRU 小程序</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="43"><span>页面置换手算模板</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="44"><span>算法对比表</span></label></li></ul>
+<h5 id="验收标准-8">验收标准<a class="heading-anchor" href="#验收标准-8" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="45"><span>页面置换题正确率不低于 70%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="46"><span>能解释抖动和工作集。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="47"><span>程序输出与至少两道手算结果一致。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-8">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-8" aria-label="链接到本节">#</a></h5>
+<p>完成三种算法各 2 题和一张对比表。</p>
+<h4 id="w09">W09｜文件、磁盘与设备管理（2026-10-19—10-25）<a class="heading-anchor" href="#w09" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 补齐操作系统剩余主干，完成一次模块级闭环验收。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-9">学习支持<a class="heading-anchor" href="#学习支持-9" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章文件系统、磁盘调度、I/O 和设备管理。</li><li><strong>视频支持：</strong> 王道操作系统：文件管理、磁盘组织、I/O 设备管理。</li><li><strong>工具 / 模板支持：</strong> 活动监视器、lsof/系统文件工具、磁盘调度题。</li></ul>
+<h5 id="本周关键难点-9">本周关键难点<a class="heading-anchor" href="#本周关键难点-9" aria-label="链接到本节">#</a></h5>
+<p>文件索引与磁盘调度细节多；以访问过程图和典型题为中心。</p>
+<h5 id="任务清单-9">任务清单<a class="heading-anchor" href="#任务清单-9" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2h）：完成文件组织、索引、磁盘和设备管理。</li><li>训练（2h）：文件与磁盘题 20 道，操作系统混合题 40 道。</li><li>实践（1.5h）：观察进程、文件描述符和磁盘 I/O，记录现象。</li><li>复盘（1.5h）：将 W06～W09 压缩为一张操作系统总图。</li></ol>
+<h5 id="三科融合-9">三科融合<a class="heading-anchor" href="#三科融合-9" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：文件组织、磁盘调度、I/O 和操作系统混合题。</li><li>案例：能够从文件/设备机制解释性能现象。</li><li>论文：记录一次 I/O 或文件上传性能问题。</li></ul>
+<h5 id="本周交付物-9">本周交付物<a class="heading-anchor" href="#本周交付物-9" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="48"><span>操作系统总图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="49"><span>40 道混合题记录</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="50"><span>系统观察笔记</span></label></li></ul>
+<h5 id="验收标准-9">验收标准<a class="heading-anchor" href="#验收标准-9" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="51"><span>操作系统混合题正确率不低于 60%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="52"><span>能比较 FCFS、SSTF、SCAN。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="53"><span>W06～W09 到期错题重做正确率达到 80%。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-9">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-9" aria-label="链接到本节">#</a></h5>
+<p>完成 25 道混合题和操作系统总图。</p>
+<h4 id="w10">W10｜线性结构与复杂度（2026-10-26—11-01）<a class="heading-anchor" href="#w10" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 掌握复杂度、数组、链表、栈和队列，并能联系前端代码理解。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-10">学习支持<a class="heading-anchor" href="#学习支持-10" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章数据结构与算法基础相关部分。</li><li><strong>视频支持：</strong> 王道数据结构：绪论、线性表、栈和队列选看。</li><li><strong>工具 / 模板支持：</strong> TypeScript、复杂度表、20 道章节题。</li></ul>
+<h5 id="本周关键难点-10">本周关键难点<a class="heading-anchor" href="#本周关键难点-10" aria-label="链接到本节">#</a></h5>
+<p>容易陷入大量代码细节；软考重点是结构用途、操作过程和复杂度。</p>
+<h5 id="任务清单-10">任务清单<a class="heading-anchor" href="#任务清单-10" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2h）：学习复杂度与四类线性结构。</li><li>训练（2h）：完成复杂度和结构选择题至少 20 道。</li><li>实践（2h）：TypeScript 实现栈、队列和链表的核心操作。</li><li>复盘（1h）：用前端事件队列、撤销栈等例子解释结构用途。</li></ol>
+<h5 id="三科融合-10">三科融合<a class="heading-anchor" href="#三科融合-10" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：复杂度、线性结构操作与应用。</li><li>案例：能为任务、缓存、调用栈选择数据结构。</li><li>论文：不单独准备，保留实践例子。</li></ul>
+<h5 id="本周交付物-10">本周交付物<a class="heading-anchor" href="#本周交付物-10" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="54"><span>TypeScript 实现</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="55"><span>复杂度速查表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="56"><span>结构应用对比</span></label></li></ul>
+<h5 id="验收标准-10">验收标准<a class="heading-anchor" href="#验收标准-10" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="57"><span>20 道题正确率不低于 60%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="58"><span>能说出四类结构的核心操作复杂度。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="59"><span>代码通过至少 5 个自定义测试。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-10">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-10" aria-label="链接到本节">#</a></h5>
+<p>完成栈和队列实现、12 道题和复杂度表。</p>
+<h4 id="w11">W11｜树、哈夫曼与 B+ 树（2026-11-02—11-08）<a class="heading-anchor" href="#w11" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 掌握树遍历、哈夫曼编码和 B/B+ 树的结构用途。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-11">学习支持<a class="heading-anchor" href="#学习支持-11" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章树结构；数据库索引相关段落前置阅读。</li><li><strong>视频支持：</strong> 王道数据结构：二叉树、哈夫曼树、B 树和 B+ 树。</li><li><strong>工具 / 模板支持：</strong> TypeScript 二叉树、遍历图、数据库索引示意图。</li></ul>
+<h5 id="本周关键难点-11">本周关键难点<a class="heading-anchor" href="#本周关键难点-11" aria-label="链接到本节">#</a></h5>
+<p>遍历顺序和 B/B+ 树区别易混；用实际查找路径解释，不背定义。</p>
+<h5 id="任务清单-11">任务清单<a class="heading-anchor" href="#任务清单-11" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习树、遍历、哈夫曼和多路查找树。</li><li>训练（2h）：遍历、WPL、哈夫曼编码和 B+ 树题至少 20 道。</li><li>实践（1.5h）：实现三种遍历并输出顺序。</li><li>表达（1h）：画 B+ 树查找范围数据的过程。</li></ol>
+<h5 id="三科融合-11">三科融合<a class="heading-anchor" href="#三科融合-11" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：遍历、WPL、编码和树结构特点。</li><li>案例：解释 B+ 树为何适合数据库索引。</li><li>论文：积累索引选型和查询性能素材。</li></ul>
+<h5 id="本周交付物-11">本周交付物<a class="heading-anchor" href="#本周交付物-11" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="60"><span>三种遍历程序</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="61"><span>哈夫曼手算记录</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="62"><span>B/B+ 树对比图</span></label></li></ul>
+<h5 id="验收标准-11">验收标准<a class="heading-anchor" href="#验收标准-11" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="63"><span>树模块题正确率不低于 60%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="64"><span>不看资料完成一次哈夫曼编码。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="65"><span>能说明 B+ 树对范围查询和磁盘 I/O 的好处。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-11">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-11" aria-label="链接到本节">#</a></h5>
+<p>完成遍历程序、10 道题和 B+ 树示意图。</p>
+<h4 id="w12">W12｜图、查找、哈希与排序（2026-11-09—11-15）<a class="heading-anchor" href="#w12" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 根据数据特征选择图算法、查找方法和排序算法。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-12">学习支持<a class="heading-anchor" href="#学习支持-12" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章图、查找、哈希和排序。</li><li><strong>视频支持：</strong> 王道数据结构：图、查找和排序的考点讲解。</li><li><strong>工具 / 模板支持：</strong> 算法对比表、DFS/BFS 小例子、分类题。</li></ul>
+<h5 id="本周关键难点-12">本周关键难点<a class="heading-anchor" href="#本周关键难点-12" aria-label="链接到本节">#</a></h5>
+<p>算法名称多；用输入规模、稳定性、空间和是否有序四个维度比较。</p>
+<h5 id="任务清单-12">任务清单<a class="heading-anchor" href="#任务清单-12" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习 DFS/BFS、最短路、拓扑、哈希和排序。</li><li>训练（2.5h）：完成相关题不少于 30 道。</li><li>实践（1h）：用 TypeScript 实现 DFS 或 BFS，并记录复杂度。</li><li>复盘（1h）：完成排序算法多维对比表。</li></ol>
+<h5 id="三科融合-12">三科融合<a class="heading-anchor" href="#三科融合-12" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：遍历、拓扑、查找和排序复杂度。</li><li>案例：能根据场景说明哈希、树和排序选择。</li><li>论文：保留选型权衡表达。</li></ul>
+<h5 id="本周交付物-12">本周交付物<a class="heading-anchor" href="#本周交付物-12" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="66"><span>算法对比表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="67"><span>图遍历实现</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="68"><span>模块错题卡</span></label></li></ul>
+<h5 id="验收标准-12">验收标准<a class="heading-anchor" href="#验收标准-12" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="69"><span>模块题正确率不低于 60%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="70"><span>能闭卷写出主要排序的时间/空间/稳定性。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="71"><span>能解释拓扑排序适用的业务问题。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-12">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-12" aria-label="链接到本节">#</a></h5>
+<p>完成 18 道题、排序对比表和一个遍历示例。</p>
+<h4 id="w13">W13｜网络分层、交换与链路层（2026-11-16—11-22）<a class="heading-anchor" href="#w13" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 建立从应用数据到帧的分层封装模型，区分常见网络设备。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-13">学习支持<a class="heading-anchor" href="#学习支持-13" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章计算机网络：体系结构、交换和链路层。</li><li><strong>视频支持：</strong> 王道或湖科大网络：概述、物理层、数据链路层。</li><li><strong>工具 / 模板支持：</strong> 浏览器开发者工具、Wireshark 可选、封装过程图。</li></ul>
+<h5 id="本周关键难点-13">本周关键难点<a class="heading-anchor" href="#本周关键难点-13" aria-label="链接到本节">#</a></h5>
+<p>层次与设备易混；始终问‘这一层处理什么地址、解决什么问题’。</p>
+<h5 id="任务清单-13">任务清单<a class="heading-anchor" href="#任务清单-13" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习 OSI/TCP-IP、交换方式、以太网和链路协议。</li><li>训练（2h）：分层与链路层题至少 25 道。</li><li>实践（1.5h）：画浏览器请求从应用数据到帧的封装过程。</li><li>表达（1h）：比较集线器、交换机、路由器和网关。</li></ol>
+<h5 id="三科融合-13">三科融合<a class="heading-anchor" href="#三科融合-13" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：层次、协议、帧和网络设备。</li><li>案例：能定位一个网络问题所属层次。</li><li>论文：记录前后端链路中各层的可观测点。</li></ul>
+<h5 id="本周交付物-13">本周交付物<a class="heading-anchor" href="#本周交付物-13" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="72"><span>分层封装图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="73"><span>设备对比表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="74"><span>25 道题记录</span></label></li></ul>
+<h5 id="验收标准-13">验收标准<a class="heading-anchor" href="#验收标准-13" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="75"><span>模块题正确率不低于 60%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="76"><span>能说明每层 PDU 与核心职责。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="77"><span>不混淆交换机、路由器和应用网关。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-13">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-13" aria-label="链接到本节">#</a></h5>
+<p>完成分层图、设备表和 15 道题。</p>
+<h4 id="w14">W14｜IP、子网、路由与 NAT（2026-11-23—11-29）<a class="heading-anchor" href="#w14" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 能够稳定完成子网计算，并解释数据包跨网段的路径。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-14">学习支持<a class="heading-anchor" href="#学习支持-14" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章网络层：IP、CIDR、路由、NAT、ICMP。</li><li><strong>视频支持：</strong> 王道/湖科大网络：网络层、子网划分和路由。</li><li><strong>工具 / 模板支持：</strong> ping、traceroute、nslookup、子网计算模板。</li></ul>
+<h5 id="本周关键难点-14">本周关键难点<a class="heading-anchor" href="#本周关键难点-14" aria-label="链接到本节">#</a></h5>
+<p>子网题靠重复形成稳定步骤；先写前缀、地址数、网络/广播地址。</p>
+<h5 id="任务清单-14">任务清单<a class="heading-anchor" href="#任务清单-14" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2h）：学习 IP、CIDR、路由表、NAT 和 ICMP。</li><li>训练（2.5h）：连续 5 天每天 3 道子网题。</li><li>实践（1.5h）：使用 ping/traceroute/nslookup 记录一次访问路径。</li><li>复盘（1h）：整理私网、NAT、网关和路由选择的关系。</li></ol>
+<h5 id="三科融合-14">三科融合<a class="heading-anchor" href="#三科融合-14" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：子网、路由、地址与 ICMP。</li><li>案例：能为网络划分和隔离提出方案。</li><li>论文：积累网络隔离与安全边界素材。</li></ul>
+<h5 id="本周交付物-14">本周交付物<a class="heading-anchor" href="#本周交付物-14" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="78"><span>15 道子网计算</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="79"><span>网络路径观察记录</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="80"><span>网络层一页图</span></label></li></ul>
+<h5 id="验收标准-14">验收标准<a class="heading-anchor" href="#验收标准-14" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="81"><span>随机 10 道子网题至少正确 7 道。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="82"><span>能解释 NAT 解决的问题及限制。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="83"><span>能根据路由表说明下一跳。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-14">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-14" aria-label="链接到本节">#</a></h5>
+<p>完成 8 道子网题和一次 traceroute 观察。</p>
+<h4 id="w15">W15｜TCP、UDP 与可靠传输（2026-11-30—12-06）<a class="heading-anchor" href="#w15" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 理解连接建立、可靠传输、流量/拥塞控制及 TCP/UDP 选型。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-15">学习支持<a class="heading-anchor" href="#学习支持-15" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章传输层：TCP、UDP、窗口和拥塞控制。</li><li><strong>视频支持：</strong> 王道/湖科大网络：传输层、TCP 报文、连接管理。</li><li><strong>工具 / 模板支持：</strong> Node.js net/dgram、浏览器开发者工具、时序图。</li></ul>
+<h5 id="本周关键难点-15">本周关键难点<a class="heading-anchor" href="#本周关键难点-15" aria-label="链接到本节">#</a></h5>
+<p>握手流程容易背成口号；结合序号、确认号和状态变化理解。</p>
+<h5 id="任务清单-15">任务清单<a class="heading-anchor" href="#任务清单-15" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习 TCP/UDP、握手关闭、窗口与拥塞。</li><li>训练（2h）：完成传输层题至少 25 道。</li><li>实践（1.5h）：写 TCP/UDP 最小通信示例或抓取一次连接。</li><li>表达（1h）：画建立和关闭时序，解释 TIME_WAIT。</li></ol>
+<h5 id="三科融合-15">三科融合<a class="heading-anchor" href="#三科融合-15" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：报文、状态、窗口和协议选型。</li><li>案例：按可靠性、时延和开销选择 TCP/UDP。</li><li>论文：积累长连接、重试和超时策略素材。</li></ul>
+<h5 id="本周交付物-15">本周交付物<a class="heading-anchor" href="#本周交付物-15" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="84"><span>TCP 时序图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="85"><span>最小通信示例</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="86"><span>协议选型表</span></label></li></ul>
+<h5 id="验收标准-15">验收标准<a class="heading-anchor" href="#验收标准-15" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="87"><span>传输层题正确率不低于 65%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="88"><span>能解释滑动窗口与拥塞窗口差异。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="89"><span>能为三个业务场景选择 TCP 或 UDP 并写理由。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-15">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-15" aria-label="链接到本节">#</a></h5>
+<p>完成时序图、15 道题和协议选型表。</p>
+<h4 id="w16">W16｜DNS、HTTP/HTTPS 与负载均衡（2026-12-07—12-13）<a class="heading-anchor" href="#w16" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 从前端优势出发，完整解释浏览器输入 URL 后的网络与服务端链路。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-16">学习支持<a class="heading-anchor" href="#学习支持-16" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 2 章应用层、安全协议和网络服务相关内容。</li><li><strong>视频支持：</strong> 网络课程 DNS/HTTP/HTTPS；主线课代理、负载均衡和网络安全基础。</li><li><strong>工具 / 模板支持：</strong> curl、DevTools、openssl 可选、完整请求链路图。</li></ul>
+<h5 id="本周关键难点-16">本周关键难点<a class="heading-anchor" href="#本周关键难点-16" aria-label="链接到本节">#</a></h5>
+<p>熟悉前端现象但缺少系统链路；强制补齐 DNS、TLS、代理和后端入口。</p>
+<h5 id="任务清单-16">任务清单<a class="heading-anchor" href="#任务清单-16" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2h）：复习 DNS、HTTP、HTTPS、代理、负载均衡。</li><li>训练（2h）：完成网络模块 50 道混合题。</li><li>实践（2h）：用 DevTools/curl 观察 DNS、TLS、缓存头和连接复用。</li><li>表达（1h）：绘制 URL 到数据库前的完整链路并口述。</li></ol>
+<h5 id="三科融合-16">三科融合<a class="heading-anchor" href="#三科融合-16" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：应用协议、TLS、代理和网络综合。</li><li>案例：从链路层次定位性能与可用性问题。</li><li>论文：形成一段可复用的系统访问链路项目描述。</li></ul>
+<h5 id="本周交付物-16">本周交付物<a class="heading-anchor" href="#本周交付物-16" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="90"><span>Web 请求全链路图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="91"><span>网络 50 题记录</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="92"><span>网络模块总复盘</span></label></li></ul>
+<h5 id="验收标准-16">验收标准<a class="heading-anchor" href="#验收标准-16" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="93"><span>网络混合题正确率不低于 65%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="94"><span>能在 8 分钟内从 URL 讲到后端服务。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="95"><span>能指出链路中至少 5 个性能/安全控制点。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-16">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-16" aria-label="链接到本节">#</a></h5>
+<p>完成全链路图和 30 道混合题。</p>
+<h4 id="w17">W17｜数据库体系、关系模型与 ER（2026-12-14—12-20）<a class="heading-anchor" href="#w17" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 掌握数据库结构抽象、关系模型和概念设计，完成实践项目 ER 图。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-17">学习支持<a class="heading-anchor" href="#学习支持-17" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 6 章数据库系统、三级模式、关系模型和 ER 设计。</li><li><strong>视频支持：</strong> 哈工大战德臣数据库：系统结构、关系模型、ER 模型。</li><li><strong>工具 / 模板支持：</strong> PostgreSQL/MySQL、ER 绘图工具、关系代数练习。</li></ul>
+<h5 id="本周关键难点-17">本周关键难点<a class="heading-anchor" href="#本周关键难点-17" aria-label="链接到本节">#</a></h5>
+<p>三级模式和关系代数抽象；用前端视图、业务模型和物理存储类比。</p>
+<h5 id="任务清单-17">任务清单<a class="heading-anchor" href="#任务清单-17" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习三级模式、独立性、关系模型和 ER。</li><li>训练（2h）：关系模型/代数题至少 20 道。</li><li>实践（2h）：为贯穿项目识别实体、关系、基数并画 ER 图。</li><li>复盘（1h）：检查每个实体主键、业务约束和数据归属。</li></ol>
+<h5 id="三科融合-17">三科融合<a class="heading-anchor" href="#三科融合-17" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：三级模式、独立性、关系运算。</li><li>案例：根据业务描述完成概念数据设计。</li><li>论文：保存数据模型设计过程与关键约束。</li></ul>
+<h5 id="本周交付物-17">本周交付物<a class="heading-anchor" href="#本周交付物-17" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="96"><span>实践项目 ER 图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="97"><span>关系模型概念卡</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="98"><span>20 道题记录</span></label></li></ul>
+<h5 id="验收标准-17">验收标准<a class="heading-anchor" href="#验收标准-17" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="99"><span>能区分外模式/模式/内模式。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="100"><span>ER 图覆盖全部核心用例且无明显多值字段。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="101"><span>模块题正确率不低于 60%。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-17">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-17" aria-label="链接到本节">#</a></h5>
+<p>完成 ER 图、三级模式对比和 12 道题。</p>
+<h4 id="w18">W18｜SQL、函数依赖与规范化（2026-12-21—12-27）<a class="heading-anchor" href="#w18" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 能够写常用 SQL，并把业务表规范化到合理程度。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-18">学习支持<a class="heading-anchor" href="#学习支持-18" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 6 章 SQL、函数依赖、范式和模式分解。</li><li><strong>视频支持：</strong> 哈工大数据库：SQL、函数依赖、规范化和数据库设计。</li><li><strong>工具 / 模板支持：</strong> PostgreSQL/MySQL、SQL 客户端、范式手算模板。</li></ul>
+<h5 id="本周关键难点-18">本周关键难点<a class="heading-anchor" href="#本周关键难点-18" aria-label="链接到本节">#</a></h5>
+<p>范式只背定义无法做题；每题先求候选键，再判断依赖。</p>
+<h5 id="任务清单-18">任务清单<a class="heading-anchor" href="#任务清单-18" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习 SQL、函数依赖、1NF～BCNF。</li><li>训练（2h）：范式与分解题至少 15 道。</li><li>实践（2h）：创建实践项目表，完成连接、分组和子查询各 3 条。</li><li>复盘（1h）：记录规范化收益及反规范化可能场景。</li></ol>
+<h5 id="三科融合-18">三科融合<a class="heading-anchor" href="#三科融合-18" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：候选键、范式、SQL 和分解。</li><li>案例：能根据数据异常提出规范化/索引措施。</li><li>论文：积累规范化与性能权衡素材。</li></ul>
+<h5 id="本周交付物-18">本周交付物<a class="heading-anchor" href="#本周交付物-18" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="102"><span>可执行建表 SQL</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="103"><span>9 条以上查询</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="104"><span>范式解题模板</span></label></li></ul>
+<h5 id="验收标准-18">验收标准<a class="heading-anchor" href="#验收标准-18" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="105"><span>范式题正确率不低于 60%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="106"><span>SQL 在本地数据库执行通过。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="107"><span>能解释插入、删除、更新异常。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-18">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-18" aria-label="链接到本节">#</a></h5>
+<p>完成建表、5 条查询和 8 道范式题。</p>
+<h4 id="w19">W19｜事务、并发、恢复与索引（2026-12-28—2027-01-03）<a class="heading-anchor" href="#w19" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 理解 ACID、隔离、锁、日志、恢复和索引，完成基础阶段总验收。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-19">学习支持<a class="heading-anchor" href="#学习支持-19" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 6 章事务、并发控制、恢复、索引和查询优化。</li><li><strong>视频支持：</strong> 哈工大数据库：事务、并发控制、恢复；补充 EXPLAIN/索引基础视频。</li><li><strong>工具 / 模板支持：</strong> 两个数据库会话、EXPLAIN、P1 混合卷。</li></ul>
+<h5 id="本周关键难点-19">本周关键难点<a class="heading-anchor" href="#本周关键难点-19" aria-label="链接到本节">#</a></h5>
+<p>隔离级别和锁现象抽象；用两个会话实际复现比背表格有效。</p>
+<h5 id="任务清单-19">任务清单<a class="heading-anchor" href="#任务清单-19" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习事务、锁、日志、恢复、索引和优化。</li><li>实践（2h）：复现一种并发异常，用 EXPLAIN 比较索引前后计划。</li><li>训练（2h）：数据库模块题 30 道，P1 五模块混合题 75 道。</li><li>复盘（1h）：列出 P1 最弱三个子模块和下月补弱动作。</li></ol>
+<h5 id="三科融合-19">三科融合<a class="heading-anchor" href="#三科融合-19" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：事务异常、隔离、锁、恢复与索引。</li><li>案例：能设计事务边界、并发控制和查询优化。</li><li>论文：记录一次索引/事务决策及效果。</li></ul>
+<h5 id="本周交付物-19">本周交付物<a class="heading-anchor" href="#本周交付物-19" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="108"><span>并发实验记录</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="109"><span>EXPLAIN 对比</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="110"><span>P1 阶段复盘</span></label></li></ul>
+<h5 id="验收标准-19">验收标准<a class="heading-anchor" href="#验收标准-19" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="111"><span>数据库模块题正确率不低于 65%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="112"><span>P1 混合 75 题达到 45 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="113"><span>能解释四种隔离级别防止哪些异常。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-19">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-19" aria-label="链接到本节">#</a></h5>
+<p>完成一个并发/索引实验和 40 道混合题。</p>
+<hr>
+<h3 id="p2-软件工程与架构核心-w20-w36">P2：软件工程与架构核心（W20～W36）<a class="heading-anchor" href="#p2-软件工程与架构核心-w20-w36" aria-label="链接到本节">#</a></h3>
+<ul><li><strong>阶段目标：</strong> 掌握软件工程、安全、架构风格、质量属性、评估和可靠性。</li><li><strong>阶段核心支持：</strong> 官方教程第 3～11 章、主线精讲课、UML/ADR/质量属性场景模板。</li><li><strong>阶段出口：</strong> 综合达到 50 分左右，案例能够按规范术语分点回答并解释权衡。</li></ul>
+<h4 id="w20">W20｜软件生命周期与开发模型（2027-01-04—01-10）<a class="heading-anchor" href="#w20" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 能够依据需求稳定性、风险、反馈周期和团队条件选择开发模型。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-20">学习支持<a class="heading-anchor" href="#学习支持-20" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 5 章软件生命周期、开发模型、敏捷和统一过程。</li><li><strong>视频支持：</strong> 主线课程：软件工程、开发模型和敏捷方法。</li><li><strong>工具 / 模板支持：</strong> 开发模型决策表、真实项目时间线。</li></ul>
+<h5 id="本周关键难点-20">本周关键难点<a class="heading-anchor" href="#本周关键难点-20" aria-label="链接到本节">#</a></h5>
+<p>模型优缺点容易背成孤立清单；必须绑定项目约束做选择。</p>
+<h5 id="任务清单-20">任务清单<a class="heading-anchor" href="#任务清单-20" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习瀑布、原型、增量、螺旋、V 模型、敏捷。</li><li>训练（2h）：开发模型场景题至少 25 道。</li><li>实践（1.5h）：把一个真实项目映射到生命周期并指出改进点。</li><li>表达（1h）：为 5 个场景选择模型并写两条理由、一条代价。</li></ol>
+<h5 id="三科融合-20">三科融合<a class="heading-anchor" href="#三科融合-20" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：模型特征和适用场景。</li><li>案例：根据题干约束选择开发过程。</li><li>论文：形成项目采用某开发模式的背景素材。</li></ul>
+<h5 id="本周交付物-20">本周交付物<a class="heading-anchor" href="#本周交付物-20" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="114"><span>开发模型决策表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="115"><span>真实项目生命周期图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="116"><span>25 道题记录</span></label></li></ul>
+<h5 id="验收标准-20">验收标准<a class="heading-anchor" href="#验收标准-20" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="117"><span>场景题正确率不低于 65%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="118"><span>每次选型都能写出适用条件和代价。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="119"><span>能区分迭代、增量和敏捷。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-20">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-20" aria-label="链接到本节">#</a></h5>
+<p>完成模型对比表和 15 道题。</p>
+<h4 id="w21">W21｜需求工程与系统建模（2027-01-11—01-17）<a class="heading-anchor" href="#w21" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 把模糊业务转成可验证的功能需求、质量需求和领域模型。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-21">学习支持<a class="heading-anchor" href="#学习支持-21" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 5 章需求获取、分析、规格、验证与变更。</li><li><strong>视频支持：</strong> 主线课程：需求工程、结构化分析和面向对象分析。</li><li><strong>工具 / 模板支持：</strong> 需求模板、用例图、领域模型、需求跟踪表。</li></ul>
+<h5 id="本周关键难点-21">本周关键难点<a class="heading-anchor" href="#本周关键难点-21" aria-label="链接到本节">#</a></h5>
+<p>非功能需求常写成口号；必须补环境、响应和度量。</p>
+<h5 id="任务清单-21">任务清单<a class="heading-anchor" href="#任务清单-21" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2h）：学习需求流程、方法和跟踪。</li><li>训练（2h）：需求与分析题至少 20 道。</li><li>实践（2h）：为实践项目写 8 条功能、5 条非功能需求和领域模型。</li><li>评审（1h）：逐条检查是否明确、可验证、无歧义。</li></ol>
+<h5 id="三科融合-21">三科融合<a class="heading-anchor" href="#三科融合-21" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：需求分类、方法和跟踪。</li><li>案例：从题干提取功能/质量/约束。</li><li>论文：项目背景开始使用量化质量目标。</li></ul>
+<h5 id="本周交付物-21">本周交付物<a class="heading-anchor" href="#本周交付物-21" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="120"><span>13 条需求</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="121"><span>用例图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="122"><span>领域模型与跟踪表</span></label></li></ul>
+<h5 id="验收标准-21">验收标准<a class="heading-anchor" href="#验收标准-21" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="123"><span>每条非功能需求均有度量。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="124"><span>用例与需求可相互追踪。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="125"><span>需求模块题正确率不低于 60%。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-21">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-21" aria-label="链接到本节">#</a></h5>
+<p>完成 5 条功能、3 条质量需求和用例图。</p>
+<h4 id="w22">W22｜UML 图与动态建模（2027-01-18—01-24）<a class="heading-anchor" href="#w22" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 根据问题选择 UML 图，并独立绘制关键业务的静态与动态视图。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-22">学习支持<a class="heading-anchor" href="#学习支持-22" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 5 章 UML、面向对象分析与设计。</li><li><strong>视频支持：</strong> 主线课程：UML 类图、顺序图、活动图、状态图、组件图和部署图。</li><li><strong>工具 / 模板支持：</strong> Mermaid/draw.io/PlantUML，登录与图片处理场景。</li></ul>
+<h5 id="本周关键难点-22">本周关键难点<a class="heading-anchor" href="#本周关键难点-22" aria-label="链接到本节">#</a></h5>
+<p>各种图用途易混；每画一张先写它要回答的唯一问题。</p>
+<h5 id="任务清单-22">任务清单<a class="heading-anchor" href="#任务清单-22" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2h）：学习高频 UML 图语义和关系。</li><li>训练（2h）：完成 UML 识图题至少 20 道。</li><li>实践（2h）：为登录、上传/处理分别画顺序图和状态/活动图。</li><li>表达（1h）：为每种图写一句‘它回答什么问题’。</li></ol>
+<h5 id="三科融合-22">三科融合<a class="heading-anchor" href="#三科融合-22" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：UML 元素、关系和图用途。</li><li>案例：补图、识图和按场景选图。</li><li>论文：可用部署图/组件图描述项目架构，但不堆图。</li></ul>
+<h5 id="本周交付物-22">本周交付物<a class="heading-anchor" href="#本周交付物-22" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="126"><span>至少 3 张 UML 图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="127"><span>图用途速查表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="128"><span>20 道识图题</span></label></li></ul>
+<h5 id="验收标准-22">验收标准<a class="heading-anchor" href="#验收标准-22" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="129"><span>能在 1 分钟内说明六种图用途。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="130"><span>关键消息和状态转换与需求一致。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="131"><span>UML 题正确率不低于 65%。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-22">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-22" aria-label="链接到本节">#</a></h5>
+<p>完成顺序图、状态图和 12 道题。</p>
+<h4 id="w23">W23｜设计原则、模式、测试与维护（2027-01-25—01-31）<a class="heading-anchor" href="#w23" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 理解常用模式意图及软件质量保障过程，避免只背类图。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-23">学习支持<a class="heading-anchor" href="#学习支持-23" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 5 章设计、构件、测试、维护、逆向工程和净室。</li><li><strong>视频支持：</strong> 主线课程对应小节；设计模式只选高频模式精讲。</li><li><strong>工具 / 模板支持：</strong> SOLID/模式卡、前端组件与状态管理实例、测试金字塔。</li></ul>
+<h5 id="本周关键难点-23">本周关键难点<a class="heading-anchor" href="#本周关键难点-23" aria-label="链接到本节">#</a></h5>
+<p>模式相似度高；用‘变化点、协作对象、代价’区分。</p>
+<h5 id="任务清单-23">任务清单<a class="heading-anchor" href="#任务清单-23" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习 SOLID、12 个高频模式、测试与维护。</li><li>训练（2h）：模式/测试/维护题至少 30 道。</li><li>实践（1.5h）：将前端组件、状态管理或请求封装映射到 3 个模式。</li><li>复盘（1h）：为每个高频模式写意图、场景和代价。</li></ol>
+<h5 id="三科融合-23">三科融合<a class="heading-anchor" href="#三科融合-23" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：设计模式、测试方法和维护类型。</li><li>案例：识别模式并设计测试/维护措施。</li><li>论文：积累可修改性与测试性的实践措施。</li></ul>
+<h5 id="本周交付物-23">本周交付物<a class="heading-anchor" href="#本周交付物-23" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="132"><span>12 张模式卡</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="133"><span>测试方法对比</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="134"><span>前端实例映射</span></label></li></ul>
+<h5 id="验收标准-23">验收标准<a class="heading-anchor" href="#验收标准-23" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="135"><span>模块题正确率不低于 65%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="136"><span>能不画类图说明 8 个模式意图。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="137"><span>能区分四类维护和主要测试层次。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-23">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-23" aria-label="链接到本节">#</a></h5>
+<p>完成 8 个模式卡、18 道题和测试对比表。</p>
+<h4 id="w24">W24｜信息系统与企业集成（2027-02-01—02-07）<a class="heading-anchor" href="#w24" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 建立业务、应用、数据和技术之间的企业信息化视角。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-24">学习支持<a class="heading-anchor" href="#学习支持-24" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 3 章信息系统、企业信息化、ERP/CRM/SCM 和系统工程。</li><li><strong>视频支持：</strong> 主线课程：信息系统基础、企业信息化和应用集成。</li><li><strong>工具 / 模板支持：</strong> 企业应用集成图、业务能力地图简版。</li></ul>
+<h5 id="本周关键难点-24">本周关键难点<a class="heading-anchor" href="#本周关键难点-24" aria-label="链接到本节">#</a></h5>
+<p>管理名词多且缺乏经验；围绕数据如何跨系统流转来理解。</p>
+<h5 id="任务清单-24">任务清单<a class="heading-anchor" href="#任务清单-24" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：完成第 3 章主干。</li><li>训练（2h）：信息系统分类与集成题至少 25 道。</li><li>实践（1.5h）：为一个熟悉业务画 ERP/CRM/前台等系统集成图。</li><li>表达（1h）：从业务目标说明为何需要集成。</li></ol>
+<h5 id="三科融合-24">三科融合<a class="heading-anchor" href="#三科融合-24" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：系统类型、企业信息化和集成。</li><li>案例：从业务流程识别系统边界和集成方式。</li><li>论文：补充项目业务背景和上下游系统。</li></ul>
+<h5 id="本周交付物-24">本周交付物<a class="heading-anchor" href="#本周交付物-24" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="138"><span>企业集成图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="139"><span>系统类型对比表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="140"><span>业务背景补充稿</span></label></li></ul>
+<h5 id="验收标准-24">验收标准<a class="heading-anchor" href="#验收标准-24" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="141"><span>模块题正确率不低于 60%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="142"><span>能区分 ERP、CRM、SCM 的核心范围。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="143"><span>集成图包含数据方向和责任系统。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-24">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-24" aria-label="链接到本节">#</a></h5>
+<p>完成集成图、15 道题和系统对比表。</p>
+<h4 id="w25">W25｜密码、认证与访问控制（2027-02-08—02-14）<a class="heading-anchor" href="#w25" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 从安全目标出发选择加密、签名、认证和授权机制。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-25">学习支持<a class="heading-anchor" href="#学习支持-25" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 4 章密码技术、身份认证、访问控制和安全协议。</li><li><strong>视频支持：</strong> 主线课程：信息安全基础；结合 OAuth/OIDC 基础讲解。</li><li><strong>工具 / 模板支持：</strong> OpenSSL 可选、JWT/OAuth 流程图、安全机制对比表。</li></ul>
+<h5 id="本周关键难点-25">本周关键难点<a class="heading-anchor" href="#本周关键难点-25" aria-label="链接到本节">#</a></h5>
+<p>加密、摘要、签名和证书易混；从机密性/完整性/身份/不可否认性反推。</p>
+<h5 id="任务清单-25">任务清单<a class="heading-anchor" href="#任务清单-25" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习对称/非对称、摘要、签名、PKI、访问控制。</li><li>训练（2h）：安全机制题至少 25 道。</li><li>实践（1.5h）：观察摘要/签名差异并画 OAuth/OIDC 基本流程。</li><li>复盘（1h）：为 8 个安全场景选择机制并写理由。</li></ol>
+<h5 id="三科融合-25">三科融合<a class="heading-anchor" href="#三科融合-25" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：算法用途、PKI、认证和访问模型。</li><li>案例：按安全目标匹配控制措施。</li><li>论文：积累认证授权和密钥管理素材。</li></ul>
+<h5 id="本周交付物-25">本周交付物<a class="heading-anchor" href="#本周交付物-25" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="144"><span>安全机制对比表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="145"><span>认证流程图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="146"><span>场景选型记录</span></label></li></ul>
+<h5 id="验收标准-25">验收标准<a class="heading-anchor" href="#验收标准-25" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="147"><span>安全基础题正确率不低于 60%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="148"><span>能解释加密、摘要和签名的不同目的。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="149"><span>能区分认证与授权。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-25">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-25" aria-label="链接到本节">#</a></h5>
+<p>完成机制对比表、15 道题和认证流程图。</p>
+<h4 id="w26">W26｜攻击、风险与安全设计（2027-02-15—02-21）<a class="heading-anchor" href="#w26" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 能够从资产、威胁和漏洞推导分层安全措施。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-26">学习支持<a class="heading-anchor" href="#学习支持-26" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 4 章攻击、防护、安全体系与管理；第 18 章先浏览目录。</li><li><strong>视频支持：</strong> 主线课程：Web 安全、网络安全、安全管理和风险。</li><li><strong>工具 / 模板支持：</strong> STRIDE 模板、实践项目数据流图、XSS/CSRF/CORS 经验。</li></ul>
+<h5 id="本周关键难点-26">本周关键难点<a class="heading-anchor" href="#本周关键难点-26" aria-label="链接到本节">#</a></h5>
+<p>容易堆安全名词；每项措施必须对应具体威胁和受保护资产。</p>
+<h5 id="任务清单-26">任务清单<a class="heading-anchor" href="#任务清单-26" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2h）：学习攻击、漏洞、风险、安全管理和纵深防御。</li><li>训练（2h）：攻击与控制措施题至少 25 道。</li><li>实践（2h）：为实践项目做 STRIDE 威胁清单和安全边界图。</li><li>复盘（1h）：将前端 XSS/CSRF/CORS 纳入端到端控制。</li></ol>
+<h5 id="三科融合-26">三科融合<a class="heading-anchor" href="#三科融合-26" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：攻击类型、风险和安全管理。</li><li>案例：按威胁给出预防、检测、响应措施。</li><li>论文：形成安全架构项目素材第一版。</li></ul>
+<h5 id="本周交付物-26">本周交付物<a class="heading-anchor" href="#本周交付物-26" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="150"><span>威胁模型</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="151"><span>安全边界图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="152"><span>威胁—控制映射表</span></label></li></ul>
+<h5 id="验收标准-26">验收标准<a class="heading-anchor" href="#验收标准-26" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="153"><span>每项高风险威胁至少有预防和检测措施。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="154"><span>安全题正确率不低于 60%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="155"><span>能区分威胁、漏洞、风险和事件。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-26">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-26" aria-label="链接到本节">#</a></h5>
+<p>完成 6 项 STRIDE 分析、15 道题和安全边界图。</p>
+<h4 id="w27">W27｜项目管理、标准法规与专业英语（2027-02-22—02-28）<a class="heading-anchor" href="#w27" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 补齐非技术公共知识，并建立持续到考前的英语词汇机制。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-27">学习支持<a class="heading-anchor" href="#学习支持-27" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程项目管理、标准化、法律法规、知识产权和专业英语相关内容。</li><li><strong>视频支持：</strong> 主线课程：项目管理计算、法律标准；不额外购买公共课。</li><li><strong>工具 / 模板支持：</strong> 进度网络图、成本公式卡、100 个架构英语词卡。</li></ul>
+<h5 id="本周关键难点-27">本周关键难点<a class="heading-anchor" href="#本周关键难点-27" aria-label="链接到本节">#</a></h5>
+<p>内容碎且易忘；采用题目驱动和间隔复习，不集中背一天。</p>
+<h5 id="任务清单-27">任务清单<a class="heading-anchor" href="#任务清单-27" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2h）：学习进度、成本、风险、标准和知识产权。</li><li>训练（2.5h）：公共知识题至少 40 道，含计算题。</li><li>英语（1h）：建立 100 个高频词卡并完成首次复习。</li><li>复盘（1h）：整理法律/标准易混表和公式卡。</li></ol>
+<h5 id="三科融合-27">三科融合<a class="heading-anchor" href="#三科融合-27" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：项目计算、标准法规、知识产权和英语。</li><li>案例：能识别进度、风险和合规约束。</li><li>论文：项目背景补入团队、工期、风险和标准约束。</li></ul>
+<h5 id="本周交付物-27">本周交付物<a class="heading-anchor" href="#本周交付物-27" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="156"><span>公共知识错题表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="157"><span>100 词卡</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="158"><span>项目约束补充稿</span></label></li></ul>
+<h5 id="验收标准-27">验收标准<a class="heading-anchor" href="#验收标准-27" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="159"><span>公共知识首轮正确率不低于 50%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="160"><span>能独立完成基础关键路径题。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="161"><span>一周后词卡回忆率达到 70%。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-27">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-27" aria-label="链接到本节">#</a></h5>
+<p>完成 25 道题、50 个词卡和公式卡。</p>
+<h4 id="w28">W28｜软件架构概念、描述与视图（2027-03-01—03-07）<a class="heading-anchor" href="#w28" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 建立需求—架构—详细设计—实现的边界，并能用多视图描述系统。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-28">学习支持<a class="heading-anchor" href="#学习支持-28" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 7 章软件架构概念、生命周期、架构描述、视图与视点。</li><li><strong>视频支持：</strong> 主线课程：架构基础、架构描述和基于架构的软件开发。</li><li><strong>工具 / 模板支持：</strong> C4 上下文/容器图、实践项目、首道架构案例。</li></ul>
+<h5 id="本周关键难点-28">本周关键难点<a class="heading-anchor" href="#本周关键难点-28" aria-label="链接到本节">#</a></h5>
+<p>架构图容易变成技术清单；图中必须体现边界、责任和关系。</p>
+<h5 id="任务清单-28">任务清单<a class="heading-anchor" href="#任务清单-28" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：完成架构概念、生命周期和视图。</li><li>训练（2h）：架构基础题 25 道，案例 1 道。</li><li>实践（2h）：为实践项目画上下文图和容器图。</li><li>表达（1h）：为每个容器写职责、数据和外部依赖。</li></ol>
+<h5 id="三科融合-28">三科融合<a class="heading-anchor" href="#三科融合-28" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：架构定义、生命周期和视图。</li><li>案例：首次按‘结论—依据—理由’完整作答。</li><li>论文：补充项目总体架构和本人职责。</li></ul>
+<h5 id="本周交付物-28">本周交付物<a class="heading-anchor" href="#本周交付物-28" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="162"><span>上下文图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="163"><span>容器图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="164"><span>第一道完整案例答案</span></label></li></ul>
+<h5 id="验收标准-28">验收标准<a class="heading-anchor" href="#验收标准-28" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="165"><span>能区分架构与详细设计。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="166"><span>两张图的边界和关系一致。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="167"><span>案例答案逐点对照参考评分点。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-28">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-28" aria-label="链接到本节">#</a></h5>
+<p>完成上下文图、15 道题和一道案例的核心小问。</p>
+<h4 id="w29">W29｜基础架构风格（2027-03-08—03-14）<a class="heading-anchor" href="#w29" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 识别数据流、调用返回、独立构件、虚拟机和数据中心风格并完成场景选型。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-29">学习支持<a class="heading-anchor" href="#学习支持-29" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 7 章经典软件架构风格。</li><li><strong>视频支持：</strong> 主线课程：架构风格第一部分。</li><li><strong>工具 / 模板支持：</strong> 风格对比矩阵、5 个业务场景、ADR 模板。</li></ul>
+<h5 id="本周关键难点-29">本周关键难点<a class="heading-anchor" href="#本周关键难点-29" aria-label="链接到本节">#</a></h5>
+<p>同一系统可组合多种风格；回答时指出主导风格及局部组合。</p>
+<h5 id="任务清单-29">任务清单<a class="heading-anchor" href="#任务清单-29" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2h）：学习各类风格的结构、交互和约束。</li><li>训练（2h）：风格识别题 25 道，案例 1 道。</li><li>选型（2h）：为 5 个场景写方案、理由、收益和代价。</li><li>论文（1h）：完成真实项目背景 500～700 字初稿。</li></ol>
+<h5 id="三科融合-29">三科融合<a class="heading-anchor" href="#三科融合-29" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：风格特征和适用场景。</li><li>案例：从题干识别风格并说明质量影响。</li><li>论文：项目背景、职责、约束第一版。</li></ul>
+<h5 id="本周交付物-29">本周交付物<a class="heading-anchor" href="#本周交付物-29" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="168"><span>架构风格矩阵</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="169"><span>5 个选型记录</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="170"><span>论文项目背景初稿</span></label></li></ul>
+<h5 id="验收标准-29">验收标准<a class="heading-anchor" href="#验收标准-29" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="171"><span>风格题正确率不低于 65%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="172"><span>每个选型至少写一个代价。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="173"><span>项目背景不虚构关键规模和职责。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-29">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-29" aria-label="链接到本节">#</a></h5>
+<p>完成风格矩阵、15 道题和 3 个场景选型。</p>
+<h4 id="w30">W30｜高频风格组合与 ADR（2027-03-15—03-21）<a class="heading-anchor" href="#w30" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 掌握分层、MVC、事件驱动、微内核、管道过滤和仓库风格的组合权衡。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-30">学习支持<a class="heading-anchor" href="#学习支持-30" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 7 章高频架构风格与应用。</li><li><strong>视频支持：</strong> 主线课程：八大架构/高频风格对应内容。</li><li><strong>工具 / 模板支持：</strong> 前端 MVC/MVVM 经验、ADR 模板、实践项目。</li></ul>
+<h5 id="本周关键难点-30">本周关键难点<a class="heading-anchor" href="#本周关键难点-30" aria-label="链接到本节">#</a></h5>
+<p>把框架名等同于架构风格；必须描述构件、连接件和约束。</p>
+<h5 id="任务清单-30">任务清单<a class="heading-anchor" href="#任务清单-30" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2h）：完成高频风格并复习全部风格。</li><li>训练（2h）：混合题 25 道，案例 1 道。</li><li>实践（2h）：为实践项目确定主风格并写第一份 ADR。</li><li>表达（1h）：将前端 MVC/MVVM 与系统分层对照，写相同与不同。</li></ol>
+<h5 id="三科融合-30">三科融合<a class="heading-anchor" href="#三科融合-30" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：高频风格对比。</li><li>案例：组合风格、适用性和代价。</li><li>论文：形成一段‘架构风格选择与实施’材料。</li></ul>
+<h5 id="本周交付物-30">本周交付物<a class="heading-anchor" href="#本周交付物-30" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="174"><span>第一份 ADR</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="175"><span>风格组合图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="176"><span>案例重写稿</span></label></li></ul>
+<h5 id="验收标准-30">验收标准<a class="heading-anchor" href="#验收标准-30" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="177"><span>架构风格题正确率不低于 65%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="178"><span>ADR 包含候选、理由、代价和回退。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="179"><span>能识别组合使用而非强行单选。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-30">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-30" aria-label="链接到本节">#</a></h5>
+<p>完成 ADR、15 道题和一张组合图。</p>
+<h4 id="w31">W31｜质量属性场景（2027-03-22—03-28）<a class="heading-anchor" href="#w31" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 把‘快、稳、安全、好改’转化为具有六要素的可度量场景。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-31">学习支持<a class="heading-anchor" href="#学习支持-31" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 8 章质量属性、质量属性场景。</li><li><strong>视频支持：</strong> 主线课程：性能、可用性、可修改性、安全、可测试性等。</li><li><strong>工具 / 模板支持：</strong> 质量属性六要素模板、实践项目 SLO 草案。</li></ul>
+<h5 id="本周关键难点-31">本周关键难点<a class="heading-anchor" href="#本周关键难点-31" aria-label="链接到本节">#</a></h5>
+<p>最常见错误是没有环境和度量；每条场景必须能被测试。</p>
+<h5 id="任务清单-31">任务清单<a class="heading-anchor" href="#任务清单-31" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习质量属性定义、冲突和场景六要素。</li><li>训练（2h）：质量属性题 20 道，案例 2 个小问。</li><li>实践（2h）：为实践项目写 12 条可度量场景。</li><li>评审（1h）：逐条检查刺激源、环境、响应和度量。</li></ol>
+<h5 id="三科融合-31">三科融合<a class="heading-anchor" href="#三科融合-31" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：属性定义和典型关注点。</li><li>案例：从题干提取/补全场景六要素。</li><li>论文：形成性能、可用性等项目目标段落。</li></ul>
+<h5 id="本周交付物-31">本周交付物<a class="heading-anchor" href="#本周交付物-31" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="180"><span>12 条质量属性场景</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="181"><span>属性冲突表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="182"><span>项目 SLO 草案</span></label></li></ul>
+<h5 id="验收标准-31">验收标准<a class="heading-anchor" href="#验收标准-31" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="183"><span>12 条场景全部包含六要素。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="184"><span>每条响应均可度量。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="185"><span>能说明至少 3 组质量属性权衡。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-31">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-31" aria-label="链接到本节">#</a></h5>
+<p>完成 6 条场景、12 道题和一组权衡说明。</p>
+<h4 id="w32">W32｜质量属性战术（2027-03-29—04-04）<a class="heading-anchor" href="#w32" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 能够从质量场景推导缓存、冗余、隔离、监测、限流等架构战术。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-32">学习支持<a class="heading-anchor" href="#学习支持-32" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 8 章质量属性战术。</li><li><strong>视频支持：</strong> 主线课程：质量属性战术和案例讲解。</li><li><strong>工具 / 模板支持：</strong> 属性—战术映射表、实践项目 12 条场景。</li></ul>
+<h5 id="本周关键难点-32">本周关键难点<a class="heading-anchor" href="#本周关键难点-32" aria-label="链接到本节">#</a></h5>
+<p>把技术产品当战术；先写目标机制，再举 Redis/队列等实现。</p>
+<h5 id="任务清单-32">任务清单<a class="heading-anchor" href="#任务清单-32" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：按属性学习战术及副作用。</li><li>训练（2h）：战术题 25 道，案例 1 道。</li><li>实践（2h）：为 W31 每条高优先级场景选择战术。</li><li>论文（1h）：写一段质量目标—措施—效果—代价材料。</li></ol>
+<h5 id="三科融合-32">三科融合<a class="heading-anchor" href="#三科融合-32" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：属性与战术映射。</li><li>案例：根据场景选择措施并解释效果。</li><li>论文：形成第一段可直接改写的主体论述。</li></ul>
+<h5 id="本周交付物-32">本周交付物<a class="heading-anchor" href="#本周交付物-32" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="186"><span>属性—战术矩阵</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="187"><span>实践项目战术清单</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="188"><span>论文段落</span></label></li></ul>
+<h5 id="验收标准-32">验收标准<a class="heading-anchor" href="#验收标准-32" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="189"><span>战术题正确率不低于 65%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="190"><span>每项战术都能说明收益和副作用。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="191"><span>案例答案使用规范战术术语。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-32">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-32" aria-label="链接到本节">#</a></h5>
+<p>完成矩阵、15 道题和 6 条场景的战术选择。</p>
+<h4 id="w33">W33｜ATAM、SAAM 与架构评估（2027-04-05—04-11）<a class="heading-anchor" href="#w33" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 掌握评估步骤，准确区分风险点、敏感点和权衡点。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-33">学习支持<a class="heading-anchor" href="#学习支持-33" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 8 章 SAAM、ATAM、成本效益与评估结果。</li><li><strong>视频支持：</strong> 主线课程：架构评估与典型案例。</li><li><strong>工具 / 模板支持：</strong> 简化 ATAM 会议模板、质量场景优先级表。</li></ul>
+<h5 id="本周关键难点-33">本周关键难点<a class="heading-anchor" href="#本周关键难点-33" aria-label="链接到本节">#</a></h5>
+<p>四类评估结果概念接近；用‘参数变化是否影响属性/多个属性是否冲突’判断。</p>
+<h5 id="任务清单-33">任务清单<a class="heading-anchor" href="#任务清单-33" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习 SAAM/ATAM 目标、步骤和产物。</li><li>训练（2h）：评估题 20 道，完整案例 2 道。</li><li>实践（2h）：为实践项目做简化 ATAM，列出场景、风险和权衡。</li><li>复盘（1h）：对案例答案按评分点重新组织。</li></ol>
+<h5 id="三科融合-33">三科融合<a class="heading-anchor" href="#三科融合-33" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：评估方法、步骤和术语。</li><li>案例：识别风险/敏感/权衡并给出改进。</li><li>论文：形成架构评估过程和结果素材。</li></ul>
+<h5 id="本周交付物-33">本周交付物<a class="heading-anchor" href="#本周交付物-33" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="192"><span>简化 ATAM 记录</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="193"><span>术语对比表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="194"><span>两道案例重写稿</span></label></li></ul>
+<h5 id="验收标准-33">验收标准<a class="heading-anchor" href="#验收标准-33" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="195"><span>20 道题正确率不低于 65%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="196"><span>能准确区分四类评估结果。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="197"><span>评估记录至少包含 3 个风险和 2 个权衡点。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-33">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-33" aria-label="链接到本节">#</a></h5>
+<p>完成一份简化评估、12 道题和 1 道案例。</p>
+<h4 id="w34">W34｜可靠性、可用性与容错（2027-04-12—04-18）<a class="heading-anchor" href="#w34" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 掌握可靠度、可用度计算及故障检测、隔离、恢复和冗余策略。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-34">学习支持<a class="heading-anchor" href="#学习支持-34" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 9 章软件可靠性、容错、恢复与可靠性管理。</li><li><strong>视频支持：</strong> 主线课程：可靠性基础、计算和容错设计。</li><li><strong>工具 / 模板支持：</strong> MTBF/MTTR/串并联公式卡、实践项目 SLO。</li></ul>
+<h5 id="本周关键难点-34">本周关键难点<a class="heading-anchor" href="#本周关键难点-34" aria-label="链接到本节">#</a></h5>
+<p>可靠性和可用性容易混；分别关注‘无故障概率’和‘可服务时间比例’。</p>
+<h5 id="任务清单-34">任务清单<a class="heading-anchor" href="#任务清单-34" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习概念、模型和容错策略。</li><li>训练（2.5h）：可靠性计算至少 15 道，概念题 15 道。</li><li>实践（1.5h）：为项目制定 SLO、RTO、RPO 和故障处理流程。</li><li>复盘（1h）：闭卷重建公式和适用条件。</li></ol>
+<h5 id="三科融合-34">三科融合<a class="heading-anchor" href="#三科融合-34" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：可靠度、可用性和容错计算。</li><li>案例：高可用设计、故障恢复和指标。</li><li>论文：形成高可用主题的指标与措施素材。</li></ul>
+<h5 id="本周交付物-34">本周交付物<a class="heading-anchor" href="#本周交付物-34" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="198"><span>可靠性公式卡</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="199"><span>项目 SLO/RTO/RPO</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="200"><span>故障处理流程图</span></label></li></ul>
+<h5 id="验收标准-34">验收标准<a class="heading-anchor" href="#验收标准-34" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="201"><span>随机 10 道计算至少正确 7 道。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="202"><span>能区分 MTBF、MTTR、RTO、RPO。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="203"><span>高可用措施与具体故障模式对应。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-34">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-34" aria-label="链接到本节">#</a></h5>
+<p>完成 8 道计算、指标定义和故障流程图。</p>
+<h4 id="w35">W35｜架构演化与技术债（2027-04-19—04-25）<a class="heading-anchor" href="#w35" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 能够设计分阶段迁移、兼容、回退和技术债治理方案。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-35">学习支持<a class="heading-anchor" href="#学习支持-35" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 10 章架构演化、维护、重构和遗留系统。</li><li><strong>视频支持：</strong> 主线课程：架构演化和维护。</li><li><strong>工具 / 模板支持：</strong> 演化路线图、ADR、风险与回退模板。</li></ul>
+<h5 id="本周关键难点-35">本周关键难点<a class="heading-anchor" href="#本周关键难点-35" aria-label="链接到本节">#</a></h5>
+<p>演化方案容易只写最终状态；必须写过渡阶段、数据迁移和回退。</p>
+<h5 id="任务清单-35">任务清单<a class="heading-anchor" href="#任务清单-35" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2h）：学习演化动因、影响分析和迁移方法。</li><li>训练（2h）：演化/维护题 20 道，案例 1 道。</li><li>实践（2h）：为实践项目设计单体到服务化的分阶段路线。</li><li>论文（1h）：写迁移动因、步骤、风险和结果段落。</li></ol>
+<h5 id="三科融合-35">三科融合<a class="heading-anchor" href="#三科融合-35" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：维护类型、演化和重构。</li><li>案例：遗留改造、兼容和迁移风险。</li><li>论文：形成架构演化主题主体材料。</li></ul>
+<h5 id="本周交付物-35">本周交付物<a class="heading-anchor" href="#本周交付物-35" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="204"><span>演化路线图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="205"><span>迁移 ADR</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="206"><span>论文段落</span></label></li></ul>
+<h5 id="验收标准-35">验收标准<a class="heading-anchor" href="#验收标准-35" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="207"><span>路线图至少包含现状、两阶段迁移和目标状态。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="208"><span>每阶段有验证与回退。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="209"><span>能解释重构、再工程和逆向工程的区别。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-35">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-35" aria-label="链接到本节">#</a></h5>
+<p>完成演化路线、12 道题和一个回退方案。</p>
+<h4 id="w36">W36｜新技术与架构核心阶段验收（2027-04-26—05-02）<a class="heading-anchor" href="#w36" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 建立云、物联网、AI、区块链等新技术框架，并验证 P2 核心能力。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-36">学习支持<a class="heading-anchor" href="#学习支持-36" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 11 章未来信息综合技术；回顾第 7～10 章。</li><li><strong>视频支持：</strong> 主线课程新技术小节；只看概念、特征和架构影响。</li><li><strong>工具 / 模板支持：</strong> 新技术四栏卡、75 道混合题、2 道案例。</li></ul>
+<h5 id="本周关键难点-36">本周关键难点<a class="heading-anchor" href="#本周关键难点-36" aria-label="链接到本节">#</a></h5>
+<p>追逐技术细节会失控；每项只掌握定义、关键特征、场景、风险。</p>
+<h5 id="任务清单-36">任务清单<a class="heading-anchor" href="#任务清单-36" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2h）：完成第 11 章，制作新技术四栏卡。</li><li>训练（2.5h）：P2 混合综合题 75 道。</li><li>案例（2h）：完成质量属性/评估和架构风格案例各 1 道。</li><li>复盘（1h）：列出 P2 三个红色弱项和修复计划。</li></ol>
+<h5 id="三科融合-36">三科融合<a class="heading-anchor" href="#三科融合-36" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：新技术与架构核心混合卷。</li><li>案例：按评分点完整作答两题。</li><li>论文：将已写段落归入八主题素材库。</li></ul>
+<h5 id="本周交付物-36">本周交付物<a class="heading-anchor" href="#本周交付物-36" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="210"><span>新技术卡片</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="211"><span>P2 成绩单</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="212"><span>弱项修复清单</span></label></li></ul>
+<h5 id="验收标准-36">验收标准<a class="heading-anchor" href="#验收标准-36" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="213"><span>综合混合卷达到 50 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="214"><span>案例自评达到 40 分以上。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="215"><span>每项新技术能用 2 分钟说明场景和风险。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-36">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-36" aria-label="链接到本节">#</a></h5>
+<p>完成新技术卡、40 道题和 1 道案例。</p>
+<hr>
+<h3 id="p3-专题架构与第一轮真题-w37-w45">P3：专题架构与第一轮真题（W37～W45）<a class="heading-anchor" href="#p3-专题架构与第一轮真题-w37-w45" aria-label="链接到本节">#</a></h3>
+<ul><li><strong>阶段目标：</strong> 完成教程专题架构与论文章节，贯通实践项目并进入整卷训练。</li><li><strong>阶段核心支持：</strong> 官方教程第 12～20 章、Docker Compose、Redis、RabbitMQ、分类案例和旧年真题。</li><li><strong>阶段出口：</strong> 教程第一轮完整结束，至少完成 3 套整题和 8 道专题案例。</li></ul>
+<h4 id="w37">W37｜信息系统架构（2027-05-03—05-09）<a class="heading-anchor" href="#w37" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 从业务目标推导业务、应用、数据和技术架构。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-37">学习支持<a class="heading-anchor" href="#学习支持-37" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 12 章信息系统架构设计理论与实践。</li><li><strong>视频支持：</strong> 主线课程第 12 章/信息系统架构案例。</li><li><strong>工具 / 模板支持：</strong> 四层架构视图、业务能力与应用映射表。</li></ul>
+<h5 id="本周关键难点-37">本周关键难点<a class="heading-anchor" href="#本周关键难点-37" aria-label="链接到本节">#</a></h5>
+<p>容易从技术开始；强制按业务目标→能力→应用→数据→技术顺序。</p>
+<h5 id="任务清单-37">任务清单<a class="heading-anchor" href="#任务清单-37" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：完成第 12 章理论和案例。</li><li>训练（2h）：章节题 20 道，案例 2 道。</li><li>实践（2h）：为真实项目画四层架构视图。</li><li>表达（1h）：写出每层如何支持上一层目标。</li></ol>
+<h5 id="三科融合-37">三科融合<a class="heading-anchor" href="#三科融合-37" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：信息系统架构概念与方法。</li><li>案例：从业务需求推导多层架构。</li><li>论文：补充业务目标到技术决策的主线。</li></ul>
+<h5 id="本周交付物-37">本周交付物<a class="heading-anchor" href="#本周交付物-37" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="216"><span>四层架构图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="217"><span>应用映射表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="218"><span>两道案例答案</span></label></li></ul>
+<h5 id="验收标准-37">验收标准<a class="heading-anchor" href="#验收标准-37" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="219"><span>案例自评不低于 45 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="220"><span>每个关键技术都有业务或质量依据。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="221"><span>图中无孤立应用或数据。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-37">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-37" aria-label="链接到本节">#</a></h5>
+<p>完成四层图、12 道题和 1 道案例。</p>
+<h4 id="w38">W38｜层次式架构落地（2027-05-10—05-16）<a class="heading-anchor" href="#w38" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 明确分层职责、依赖和接口，在实践项目中实现可验证的分层单体。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-38">学习支持<a class="heading-anchor" href="#学习支持-38" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 13 章层次式架构设计理论与实践。</li><li><strong>视频支持：</strong> 主线课程第 13 章、分层/MVC 复习。</li><li><strong>工具 / 模板支持：</strong> TypeScript/Node.js、数据库、组件/部署图。</li></ul>
+<h5 id="本周关键难点-38">本周关键难点<a class="heading-anchor" href="#本周关键难点-38" aria-label="链接到本节">#</a></h5>
+<p>代码目录不等于分层；用依赖方向和职责约束验证。</p>
+<h5 id="任务清单-38">任务清单<a class="heading-anchor" href="#任务清单-38" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2h）：完成第 13 章并复习分层风格。</li><li>训练（2h）：章节题 20 道，案例 2 道。</li><li>实践（3h）：实现 API、业务、数据访问三层核心流程。</li><li>复盘（1h）：检查跨层调用并写第二份 ADR。</li></ol>
+<h5 id="三科融合-38">三科融合<a class="heading-anchor" href="#三科融合-38" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：层次职责和模式。</li><li>案例：分层设计、优缺点和改进。</li><li>论文：形成分层架构的具体实施段落。</li></ul>
+<h5 id="本周交付物-38">本周交付物<a class="heading-anchor" href="#本周交付物-38" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="222"><span>分层代码骨架</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="223"><span>组件图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="224"><span>分层 ADR</span></label></li></ul>
+<h5 id="验收标准-38">验收标准<a class="heading-anchor" href="#验收标准-38" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="225"><span>核心流程可运行。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="226"><span>依赖方向符合规则且无明显跨层访问。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="227"><span>能说明分层对性能和可修改性的影响。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-38">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-38" aria-label="链接到本节">#</a></h5>
+<p>完成可运行骨架、组件图和 1 道案例。</p>
+<h4 id="w39">W39｜云原生与容器化（2027-05-17—05-23）<a class="heading-anchor" href="#w39" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 理解云原生关键构件，并把实践项目做成可重复启动的容器化部署。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-39">学习支持<a class="heading-anchor" href="#学习支持-39" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 14 章云原生架构设计理论与实践。</li><li><strong>视频支持：</strong> 主线课程第 14 章；Docker Compose 基础按需补充。</li><li><strong>工具 / 模板支持：</strong> Docker Compose、应用、数据库、Redis、部署图。</li></ul>
+<h5 id="本周关键难点-39">本周关键难点<a class="heading-anchor" href="#本周关键难点-39" aria-label="链接到本节">#</a></h5>
+<p>把云原生等同于容器；需要同时理解弹性、自动化、可观测和韧性。</p>
+<h5 id="任务清单-39">任务清单<a class="heading-anchor" href="#任务清单-39" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习容器、编排、服务网格、可观测性。</li><li>训练（2h）：章节题 20 道，案例 2 道。</li><li>实践（3h）：Compose 启动应用、数据库和 Redis，补健康检查。</li><li>论文（1h）：写云原生措施、收益和新增复杂性段落。</li></ol>
+<h5 id="三科融合-39">三科融合<a class="heading-anchor" href="#三科融合-39" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：云原生构件和特征。</li><li>案例：容器、编排、治理和可观测设计。</li><li>论文：云原生主题素材第一版。</li></ul>
+<h5 id="本周交付物-39">本周交付物<a class="heading-anchor" href="#本周交付物-39" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="228"><span>Compose 配置</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="229"><span>部署图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="230"><span>云原生论文段落</span></label></li></ul>
+<h5 id="验收标准-39">验收标准<a class="heading-anchor" href="#验收标准-39" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="231"><span>一条命令可完成环境启动。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="232"><span>能区分容器、微服务、K8s 和服务网格。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="233"><span>案例自评不低于 45 分。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-39">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-39" aria-label="链接到本节">#</a></h5>
+<p>完成容器化部署图、12 道题和 1 道案例；代码部署可延后一周。</p>
+<h4 id="w40">W40｜SOA、微服务与异步消息（2027-05-24—05-30）<a class="heading-anchor" href="#w40" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 掌握服务边界、通信、数据归属和分布式代价，并完成一次有理由的拆分。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-40">学习支持<a class="heading-anchor" href="#学习支持-40" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 15 章面向服务架构设计理论与实践。</li><li><strong>视频支持：</strong> 主线课程第 15 章；RabbitMQ/消息可靠性按需补充。</li><li><strong>工具 / 模板支持：</strong> RabbitMQ、API 网关概念、服务拆分 ADR。</li></ul>
+<h5 id="本周关键难点-40">本周关键难点<a class="heading-anchor" href="#本周关键难点-40" aria-label="链接到本节">#</a></h5>
+<p>只写‘拆成微服务’没有得分；必须说明边界、数据、通信、失败和运维。</p>
+<h5 id="任务清单-40">任务清单<a class="heading-anchor" href="#任务清单-40" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习 SOA、ESB、Web Service、微服务和网关。</li><li>训练（2h）：章节题 20 道，案例 2 道。</li><li>实践（3h）：将图片处理异步化或拆成独立服务，加入幂等/重试设计。</li><li>决策（1h）：写拆分 ADR，包含不拆分方案和回退。</li></ol>
+<h5 id="三科融合-40">三科融合<a class="heading-anchor" href="#三科融合-40" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：SOA/微服务概念和治理。</li><li>案例：拆分、通信、一致性和容错。</li><li>论文：形成微服务主题核心实施段落。</li></ul>
+<h5 id="本周交付物-40">本周交付物<a class="heading-anchor" href="#本周交付物-40" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="234"><span>异步处理流程</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="235"><span>服务拆分 ADR</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="236"><span>消息可靠性清单</span></label></li></ul>
+<h5 id="验收标准-40">验收标准<a class="heading-anchor" href="#验收标准-40" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="237"><span>能比较 SOA 与微服务。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="238"><span>异步流程覆盖幂等、重试、死信和状态查询。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="239"><span>拆分有业务/质量依据而非为了技术。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-40">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-40" aria-label="链接到本节">#</a></h5>
+<p>完成服务边界图、消息设计和 1 道案例。</p>
+<h4 id="w41">W41｜嵌入式与通信系统架构（2027-05-31—06-06）<a class="heading-anchor" href="#w41" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 掌握非主攻专题的核心约束，保证综合和案例基础得分。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-41">学习支持<a class="heading-anchor" href="#学习支持-41" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 16、17 章嵌入式与通信系统架构。</li><li><strong>视频支持：</strong> 主线课程对应专题；不额外深入硬件开发。</li><li><strong>工具 / 模板支持：</strong> 实时性/资源受限/协议三张概念卡、分类题。</li></ul>
+<h5 id="本周关键难点-41">本周关键难点<a class="heading-anchor" href="#本周关键难点-41" aria-label="链接到本节">#</a></h5>
+<p>背景陌生但范围可控；重点抓实时、可靠、资源和协议约束。</p>
+<h5 id="任务清单-41">任务清单<a class="heading-anchor" href="#任务清单-41" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（3h）：阅读两章主干和教材案例。</li><li>训练（2.5h）：综合题 30 道，相关案例各 1 道。</li><li>压缩（1h）：制作三张约束—策略卡。</li><li>复盘（1h）：只补真题暴露的知识，不拓展芯片细节。</li></ol>
+<h5 id="三科融合-41">三科融合<a class="heading-anchor" href="#三科融合-41" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：嵌入式/通信基本概念。</li><li>案例：按实时、资源、协议约束给策略。</li><li>论文：不设主备主题，只保留通用可靠性材料。</li></ul>
+<h5 id="本周交付物-41">本周交付物<a class="heading-anchor" href="#本周交付物-41" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="240"><span>三张专题卡</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="241"><span>30 道题记录</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="242"><span>两道案例答案</span></label></li></ul>
+<h5 id="验收标准-41">验收标准<a class="heading-anchor" href="#验收标准-41" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="243"><span>综合题正确率不低于 55%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="244"><span>每类案例能写出基本约束和 3 项措施。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="245"><span>投入不超过本周预算。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-41">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-41" aria-label="链接到本节">#</a></h5>
+<p>完成两章摘要、18 道题和 1 道案例。</p>
+<h4 id="w42">W42｜安全架构专题（2027-06-07—06-13）<a class="heading-anchor" href="#w42" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 把认证、授权、审计、网络、数据和运维控制组织成分层安全架构。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-42">学习支持<a class="heading-anchor" href="#学习支持-42" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 18 章安全架构设计理论与实践；回顾第 4 章。</li><li><strong>视频支持：</strong> 主线课程第 18 章和安全案例。</li><li><strong>工具 / 模板支持：</strong> W26 威胁模型、安全架构图、控制追踪表。</li></ul>
+<h5 id="本周关键难点-42">本周关键难点<a class="heading-anchor" href="#本周关键难点-42" aria-label="链接到本节">#</a></h5>
+<p>措施堆砌不等于架构；必须追踪到资产、威胁和层次。</p>
+<h5 id="任务清单-42">任务清单<a class="heading-anchor" href="#任务清单-42" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：完成安全架构理论和案例。</li><li>训练（2h）：章节题 20 道，安全案例 2 道。</li><li>实践（2.5h）：补认证、授权、审计、限流、秘密和备份设计。</li><li>论文（1h）：写安全目标—威胁—措施—效果段落。</li></ol>
+<h5 id="三科融合-42">三科融合<a class="heading-anchor" href="#三科融合-42" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：安全架构和控制。</li><li>案例：威胁分析与纵深防御。</li><li>论文：安全架构主题主体材料。</li></ul>
+<h5 id="本周交付物-42">本周交付物<a class="heading-anchor" href="#本周交付物-42" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="246"><span>分层安全架构图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="247"><span>控制追踪表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="248"><span>安全论文段落</span></label></li></ul>
+<h5 id="验收标准-42">验收标准<a class="heading-anchor" href="#验收标准-42" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="249"><span>每项措施能追踪到具体威胁。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="250"><span>案例自评不低于 45 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="251"><span>覆盖预防、检测、响应和恢复。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-42">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-42" aria-label="链接到本节">#</a></h5>
+<p>完成安全图、1 道案例和 8 项控制映射。</p>
+<h4 id="w43">W43｜大数据与数据架构（2027-06-14—06-20）<a class="heading-anchor" href="#w43" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 按数据量、时效、一致性、查询和成本选择批流、湖仓及处理链路。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-43">学习支持<a class="heading-anchor" href="#学习支持-43" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 19 章大数据架构设计理论与实践。</li><li><strong>视频支持：</strong> 主线课程第 19 章；不展开 Hadoop/Kafka 命令细节。</li><li><strong>工具 / 模板支持：</strong> 日志采集场景、批流对比图、Lambda/Kappa 概念图。</li></ul>
+<h5 id="本周关键难点-43">本周关键难点<a class="heading-anchor" href="#本周关键难点-43" aria-label="链接到本节">#</a></h5>
+<p>名词密集；始终围绕数据从产生到消费的生命周期。</p>
+<h5 id="任务清单-43">任务清单<a class="heading-anchor" href="#任务清单-43" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（2.5h）：学习大数据特征、批流、湖/仓和典型架构。</li><li>训练（2h）：章节题 20 道，案例 2 道。</li><li>实践（2h）：为日志分析设计采集、存储、计算、服务链路。</li><li>论文（1h）：写数据特征、架构选择、治理和效果段落。</li></ol>
+<h5 id="三科融合-43">三科融合<a class="heading-anchor" href="#三科融合-43" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：大数据组件和架构概念。</li><li>案例：批流/湖仓选型与数据治理。</li><li>论文：数据架构主题主体材料。</li></ul>
+<h5 id="本周交付物-43">本周交付物<a class="heading-anchor" href="#本周交付物-43" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="252"><span>数据处理链路图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="253"><span>批流/湖仓对比表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="254"><span>论文段落</span></label></li></ul>
+<h5 id="验收标准-43">验收标准<a class="heading-anchor" href="#验收标准-43" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="255"><span>能按四个维度完成选型。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="256"><span>案例自评不低于 45 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="257"><span>链路图包含数据质量、安全和服务环节。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-43">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-43" aria-label="链接到本节">#</a></h5>
+<p>完成链路图、12 道题和 1 道案例。</p>
+<h4 id="w44">W44｜论文要点与教程第一轮收口（2027-06-21—06-27）<a class="heading-anchor" href="#w44" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 完成官方教程第一轮，形成可查、可讲、可用于三科的全局知识地图。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-44">学习支持<a class="heading-anchor" href="#学习支持-44" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 20 章论文写作；回看第 1～19 章摘要。</li><li><strong>视频支持：</strong> 主线课程论文导学；只学习结构和审题，不背范文。</li><li><strong>工具 / 模板支持：</strong> 20 章总图、八主题论文表、章节完成清单。</li></ul>
+<h5 id="本周关键难点-44">本周关键难点<a class="heading-anchor" href="#本周关键难点-44" aria-label="链接到本节">#</a></h5>
+<p>回顾容易变成重读；以主动回忆和题目证据为主。</p>
+<h5 id="任务清单-44">任务清单<a class="heading-anchor" href="#任务清单-44" aria-label="链接到本节">#</a></h5>
+<ol><li>输入（1.5h）：学习论文要求、常见问题和写作结构。</li><li>总复习（2.5h）：闭卷搭 20 章总图，再用目录补漏。</li><li>案例（2h）：完成 3 道不同专题案例。</li><li>论文（1.5h）：确定八主题，给每个主题匹配项目素材。</li></ol>
+<h5 id="三科融合-44">三科融合<a class="heading-anchor" href="#三科融合-44" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：用 75 道混合题检查覆盖。</li><li>案例：完成三道跨专题题。</li><li>论文：形成八主题—项目素材映射。</li></ul>
+<h5 id="本周交付物-44">本周交付物<a class="heading-anchor" href="#本周交付物-44" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="258"><span>20 章知识总图</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="259"><span>八主题素材映射</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="260"><span>教程完成清单</span></label></li></ul>
+<h5 id="验收标准-44">验收标准<a class="heading-anchor" href="#验收标准-44" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="261"><span>每章有一页以内摘要和题目记录。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="262"><span>混合题达到 50 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="263"><span>八个主题均有可用项目和至少三项措施。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-44">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-44" aria-label="链接到本节">#</a></h5>
+<p>完成总图、40 道混合题和四个主题映射。</p>
+<h4 id="w45">W45｜第一轮完整真题验收（2027-06-28—07-04）<a class="heading-anchor" href="#w45" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 用整卷检验知识调用和时间分配，锁定接下来最值得补的三个弱项。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-45">学习支持<a class="heading-anchor" href="#学习支持-45" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方真题解析书；错题对应回查官方教程。</li><li><strong>视频支持：</strong> 只看完成试卷后的真题解析，不提前看讲解。</li><li><strong>工具 / 模板支持：</strong> 2018～2020 中两套未做真题、计时器、失分统计表。</li></ul>
+<h5 id="本周关键难点-45">本周关键难点<a class="heading-anchor" href="#本周关键难点-45" aria-label="链接到本节">#</a></h5>
+<p>整卷低分会诱发重新看全部课程；只按失分数据补三项。</p>
+<h5 id="任务清单-45">任务清单<a class="heading-anchor" href="#任务清单-45" aria-label="链接到本节">#</a></h5>
+<ol><li>模考（4h）：分两次完成两套综合；至少完成一套案例。</li><li>复盘（2h）：逐题归因到知识、审题、计算或时间。</li><li>补弱（1h）：每个弱项回查教材并重做 5 题。</li><li>论文（1h）：任选两道历年论文题写完整提纲。</li></ol>
+<h5 id="三科融合-45">三科融合<a class="heading-anchor" href="#三科融合-45" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：两套整卷。</li><li>案例：至少一套完整限时。</li><li>论文：两个不同主题提纲。</li></ul>
+<h5 id="本周交付物-45">本周交付物<a class="heading-anchor" href="#本周交付物-45" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="264"><span>整卷成绩单</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="265"><span>失分 Pareto 图/排序</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="266"><span>三项补弱计划</span></label></li></ul>
+<h5 id="验收标准-45">验收标准<a class="heading-anchor" href="#验收标准-45" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="267"><span>两套综合均不低于 48 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="268"><span>至少一套案例达到 45 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="269"><span>能说明每个弱项下周前如何修复。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-45">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-45" aria-label="链接到本节">#</a></h5>
+<p>完成一套综合+案例、完整复盘和一个论文提纲。</p>
+<hr>
+<h3 id="p4-案例与论文强化-w46-w54">P4：案例与论文强化（W46～W54）<a class="heading-anchor" href="#p4-案例与论文强化-w46-w54" aria-label="链接到本节">#</a></h3>
+<ul><li><strong>阶段目标：</strong> 把知识转化为案例得分点和可在 120 分钟内完成的论文。</li><li><strong>阶段核心支持：</strong> 分类案例、官方真题解析、项目素材表、论文提纲与自评模板。</li><li><strong>阶段出口：</strong> 案例稳定 45 分以上，形成 8 个提纲、3 篇全文和至少 1 篇重写稿。</li></ul>
+<h4 id="w46">W46｜架构风格与微服务案例（2027-07-05—07-11）<a class="heading-anchor" href="#w46" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 把架构选型知识转化成具有题干依据、理由和代价的得分点。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-46">学习支持<a class="heading-anchor" href="#学习支持-46" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 回查官方教程第 7、13、15 章；官方真题解析。</li><li><strong>视频支持：</strong> 案例专项：架构风格、分层、SOA/微服务。</li><li><strong>工具 / 模板支持：</strong> 案例四遍法、评分关键词表、计时器。</li></ul>
+<h5 id="本周关键难点-46">本周关键难点<a class="heading-anchor" href="#本周关键难点-46" aria-label="链接到本节">#</a></h5>
+<p>回答泛泛而谈；每一点必须引用题干约束或质量目标。</p>
+<h5 id="任务清单-46">任务清单<a class="heading-anchor" href="#任务清单-46" aria-label="链接到本节">#</a></h5>
+<ol><li>知识压缩（1.5h）：重建风格/微服务选型矩阵。</li><li>案例（4h）：完成 4 道分类案例，每道限时后重写。</li><li>训练（1h）：综合分类题 30 道。</li><li>论文（1h）：把案例措施归入两个论文提纲。</li></ol>
+<h5 id="三科融合-46">三科融合<a class="heading-anchor" href="#三科融合-46" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：风格和服务化分类题。</li><li>案例：4 道主训练。</li><li>论文：架构风格/微服务提纲补强。</li></ul>
+<h5 id="本周交付物-46">本周交付物<a class="heading-anchor" href="#本周交付物-46" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="270"><span>4 道案例初答与重写</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="271"><span>案例关键词表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="272"><span>两份更新提纲</span></label></li></ul>
+<h5 id="验收标准-46">验收标准<a class="heading-anchor" href="#验收标准-46" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="273"><span>每个小问分点作答。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="274"><span>参考答案关键点覆盖率达到 70%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="275"><span>答案包含至少一个代价或风险。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-46">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-46" aria-label="链接到本节">#</a></h5>
+<p>完成 2 道案例重写和 20 道综合题。</p>
+<h4 id="w47">W47｜质量属性、评估与可靠性案例（2027-07-12—07-18）<a class="heading-anchor" href="#w47" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 稳定识别质量场景、战术、评估结果和可靠性计算得分点。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-47">学习支持<a class="heading-anchor" href="#学习支持-47" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 回查官方教程第 8、9 章；相关真题解析。</li><li><strong>视频支持：</strong> 案例专项：质量属性、ATAM 和可靠性。</li><li><strong>工具 / 模板支持：</strong> 六要素模板、公式卡、案例评分表。</li></ul>
+<h5 id="本周关键难点-47">本周关键难点<a class="heading-anchor" href="#本周关键难点-47" aria-label="链接到本节">#</a></h5>
+<p>题干信息散；先标属性、刺激、指标，再组织答案。</p>
+<h5 id="任务清单-47">任务清单<a class="heading-anchor" href="#任务清单-47" aria-label="链接到本节">#</a></h5>
+<ol><li>复习（1.5h）：闭卷重建属性—战术和评估术语。</li><li>案例（4h）：完成 4 道分类案例及全部计算。</li><li>重做（1h）：当天与三天后各重做薄弱计算。</li><li>论文（1h）：补高可用/质量评估主题材料。</li></ol>
+<h5 id="三科融合-47">三科融合<a class="heading-anchor" href="#三科融合-47" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：属性、评估和可靠性题。</li><li>案例：4 道主训练。</li><li>论文：质量属性/高可用提纲补强。</li></ul>
+<h5 id="本周交付物-47">本周交付物<a class="heading-anchor" href="#本周交付物-47" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="276"><span>4 道案例</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="277"><span>可靠性错题表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="278"><span>更新的论文素材</span></label></li></ul>
+<h5 id="验收标准-47">验收标准<a class="heading-anchor" href="#验收标准-47" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="279"><span>案例自评不低于 48 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="280"><span>计算题正确率不低于 75%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="281"><span>能准确写出风险点、敏感点和权衡点。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-47">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-47" aria-label="链接到本节">#</a></h5>
+<p>完成 2 道案例、6 道计算和一次重做。</p>
+<h4 id="w48">W48｜数据库、缓存、消息与一致性案例（2027-07-19—07-25）<a class="heading-anchor" href="#w48" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 能设计异常路径完整的数据与异步方案，而不只罗列中间件。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-48">学习支持<a class="heading-anchor" href="#学习支持-48" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 回查官方教程第 6、13、15、19 章。</li><li><strong>视频支持：</strong> 案例专项：数据库、Redis、消息队列和分布式一致性。</li><li><strong>工具 / 模板支持：</strong> 实践项目、缓存问题清单、消息幂等模板。</li></ul>
+<h5 id="本周关键难点-48">本周关键难点<a class="heading-anchor" href="#本周关键难点-48" aria-label="链接到本节">#</a></h5>
+<p>只写正常流程；必须覆盖穿透/击穿/雪崩、重复、乱序和失败。</p>
+<h5 id="任务清单-48">任务清单<a class="heading-anchor" href="#任务清单-48" aria-label="链接到本节">#</a></h5>
+<ol><li>知识（1.5h）：整理缓存、消息和一致性问题—措施表。</li><li>案例（4h）：完成 4 道分类案例并重写。</li><li>实践（2h）：补缓存保护、幂等、重试、死信和补偿设计。</li><li>论文（1h）：把真实设计归入数据/微服务主题。</li></ol>
+<h5 id="三科融合-48">三科融合<a class="heading-anchor" href="#三科融合-48" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：数据库、缓存和消息分类题。</li><li>案例：4 道主训练。</li><li>论文：数据架构/微服务素材补强。</li></ul>
+<h5 id="本周交付物-48">本周交付物<a class="heading-anchor" href="#本周交付物-48" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="282"><span>异常—措施矩阵</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="283"><span>4 道案例</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="284"><span>实践项目更新 ADR</span></label></li></ul>
+<h5 id="验收标准-48">验收标准<a class="heading-anchor" href="#验收标准-48" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="285"><span>每个方案包含异常路径和代价。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="286"><span>案例自评不低于 48 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="287"><span>实践设计覆盖幂等和数据一致性。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-48">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-48" aria-label="链接到本节">#</a></h5>
+<p>完成 2 道案例和缓存/消息问题清单。</p>
+<h4 id="w49">W49｜云原生、安全、大数据案例与压测（2027-07-26—08-01）<a class="heading-anchor" href="#w49" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 完成三类专题案例，并用一次压测形成‘指标—瓶颈—改进—复测’证据。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-49">学习支持<a class="heading-anchor" href="#学习支持-49" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 回查官方教程第 14、18、19 章。</li><li><strong>视频支持：</strong> 对应专题案例解析；k6/JMeter 入门按需。</li><li><strong>工具 / 模板支持：</strong> k6 或 JMeter、监控日志、压测报告模板。</li></ul>
+<h5 id="本周关键难点-49">本周关键难点<a class="heading-anchor" href="#本周关键难点-49" aria-label="链接到本节">#</a></h5>
+<p>压测只报 TPS 没有意义；必须给条件、响应时间、错误率和瓶颈。</p>
+<h5 id="任务清单-49">任务清单<a class="heading-anchor" href="#任务清单-49" aria-label="链接到本节">#</a></h5>
+<ol><li>案例（3.5h）：云原生、安全、大数据各至少 1 道，另补最弱 1 道。</li><li>压测（2h）：定义场景、并发、指标并执行基线测试。</li><li>改进（1.5h）：实施一个改进并复测。</li><li>论文（1h）：把压测证据写入性能/云原生素材。</li></ol>
+<h5 id="三科融合-49">三科融合<a class="heading-anchor" href="#三科融合-49" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：三专题混合题 30 道。</li><li>案例：4 道主训练。</li><li>论文：量化效果素材。</li></ul>
+<h5 id="本周交付物-49">本周交付物<a class="heading-anchor" href="#本周交付物-49" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="288"><span>4 道案例</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="289"><span>压测报告</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="290"><span>改进前后对比数据</span></label></li></ul>
+<h5 id="验收标准-49">验收标准<a class="heading-anchor" href="#验收标准-49" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="291"><span>报告包含条件、P95、吞吐、错误率和结论。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="292"><span>至少一个改进有复测证据。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="293"><span>案例平均自评不低于 48 分。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-49">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-49" aria-label="链接到本节">#</a></h5>
+<p>完成 2 道案例和一份基线压测记录。</p>
+<h4 id="w50">W50｜论文审题与素材工程（2027-08-02—08-08）<a class="heading-anchor" href="#w50" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 建立可信项目素材库，并能把同一项目按不同题目重新组织。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-50">学习支持<a class="heading-anchor" href="#学习支持-50" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 官方教程第 20 章；历年论文题与官方写作要点。</li><li><strong>视频支持：</strong> 论文专题：审题、摘要、正文结构和常见失分原因。</li><li><strong>工具 / 模板支持：</strong> 项目素材表、八主题审题表、论文自评表。</li></ul>
+<h5 id="本周关键难点-50">本周关键难点<a class="heading-anchor" href="#本周关键难点-50" aria-label="链接到本节">#</a></h5>
+<p>最危险的是套范文和虚构规模；所有关键事实需来自真实经历或可说明的设计。</p>
+<h5 id="任务清单-50">任务清单<a class="heading-anchor" href="#任务清单-50" aria-label="链接到本节">#</a></h5>
+<ol><li>素材（2.5h）：补齐背景、规模、职责、约束、决策、问题和结果。</li><li>审题（2h）：选 8 道不同主题，逐题拆出全部子问题。</li><li>摘要（2h）：为 8 个主题各写 150～300 字摘要草稿。</li><li>评审（1h）：删除空泛、夸大和无法解释的内容。</li></ol>
+<h5 id="三科融合-50">三科融合<a class="heading-anchor" href="#三科融合-50" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：只维持 30 道混合题。</li><li>案例：维持 1 道。</li><li>论文：本周主训练，完成八主题框架。</li></ul>
+<h5 id="本周交付物-50">本周交付物<a class="heading-anchor" href="#本周交付物-50" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="294"><span>完整项目素材库</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="295"><span>八主题审题表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="296"><span>八份摘要草稿</span></label></li></ul>
+<h5 id="验收标准-50">验收标准<a class="heading-anchor" href="#验收标准-50" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="297"><span>每个主题覆盖题目全部子问。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="298"><span>每份摘要含项目、职责、方法、措施和结果。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="299"><span>所有关键项目事实能够口头解释。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-50">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-50" aria-label="链接到本节">#</a></h5>
+<p>完成一个项目素材表、四个主题审题和四份摘要。</p>
+<h4 id="w51">W51｜架构风格与质量属性论文（2027-08-09—08-15）<a class="heading-anchor" href="#w51" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 完成第一篇限时论文，并掌握‘理论—项目措施—权衡—效果’写法。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-51">学习支持<a class="heading-anchor" href="#学习支持-51" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 回查官方教程第 7、8、20 章和对应历年写作要点。</li><li><strong>视频支持：</strong> 论文专题对应主题解析；不背范文。</li><li><strong>工具 / 模板支持：</strong> 电脑输入、120 分钟计时、自评表。</li></ul>
+<h5 id="本周关键难点-51">本周关键难点<a class="heading-anchor" href="#本周关键难点-51" aria-label="链接到本节">#</a></h5>
+<p>理论篇幅过大；项目实施和本人工作应占正文主体。</p>
+<h5 id="任务清单-51">任务清单<a class="heading-anchor" href="#任务清单-51" aria-label="链接到本节">#</a></h5>
+<ol><li>提纲（1.5h）：架构风格、质量属性各完成一份详细提纲。</li><li>写作（2h）：任选一题限时完成第 1 篇全文。</li><li>评审（1.5h）：按十项自评表打分，标出空泛段落。</li><li>重写（2h）：重写摘要和最弱主体一节；维持综合 30 题、案例 1 道。</li></ol>
+<h5 id="三科融合-51">三科融合<a class="heading-anchor" href="#三科融合-51" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：30 道混合保持手感。</li><li>案例：1 道质量/风格题。</li><li>论文：2 提纲、1 全文、1 节重写。</li></ul>
+<h5 id="本周交付物-51">本周交付物<a class="heading-anchor" href="#本周交付物-51" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="300"><span>两份提纲</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="301"><span>第 1 篇限时论文</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="302"><span>自评与重写稿</span></label></li></ul>
+<h5 id="验收标准-51">验收标准<a class="heading-anchor" href="#验收标准-51" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="303"><span>120 分钟内完成。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="304"><span>每个论点都有项目措施和效果。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="305"><span>自评不低于 14/20，否则下周继续重写。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-51">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-51" aria-label="链接到本节">#</a></h5>
+<p>完成两份提纲和一篇 60 分钟主体草稿。</p>
+<h4 id="w52">W52｜微服务与云原生论文（2027-08-16—08-22）<a class="heading-anchor" href="#w52" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 完成第二篇限时论文，写清服务拆分、治理、数据和运维代价。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-52">学习支持<a class="heading-anchor" href="#学习支持-52" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 回查官方教程第 14、15、20 章。</li><li><strong>视频支持：</strong> 论文专题：微服务/SOA、云原生。</li><li><strong>工具 / 模板支持：</strong> 实践项目 ADR、部署图、论文自评表。</li></ul>
+<h5 id="本周关键难点-52">本周关键难点<a class="heading-anchor" href="#本周关键难点-52" aria-label="链接到本节">#</a></h5>
+<p>堆产品名而没有设计过程；每项技术必须回答为什么、怎么做、结果和代价。</p>
+<h5 id="任务清单-52">任务清单<a class="heading-anchor" href="#任务清单-52" aria-label="链接到本节">#</a></h5>
+<ol><li>提纲（1.5h）：微服务、云原生各完成一份详细提纲。</li><li>写作（2h）：任选一题完成第 2 篇限时全文。</li><li>证据（1h）：把实践项目 ADR、部署和消息设计嵌入正文。</li><li>评审（2h）：结构审阅并重写最空泛一节；综合 30 题、案例 1 道。</li></ol>
+<h5 id="三科融合-52">三科融合<a class="heading-anchor" href="#三科融合-52" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：30 道混合。</li><li>案例：1 道服务/云题。</li><li>论文：2 提纲、1 全文、1 节重写。</li></ul>
+<h5 id="本周交付物-52">本周交付物<a class="heading-anchor" href="#本周交付物-52" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="306"><span>两份提纲</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="307"><span>第 2 篇限时论文</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="308"><span>证据清单</span></label></li></ul>
+<h5 id="验收标准-52">验收标准<a class="heading-anchor" href="#验收标准-52" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="309"><span>120 分钟内完成。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="310"><span>覆盖边界、通信、数据、治理和运维。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="311"><span>正文至少写出两项明确代价或风险。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-52">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-52" aria-label="链接到本节">#</a></h5>
+<p>完成两提纲和一篇主体草稿。</p>
+<h4 id="w53">W53｜高可用与安全架构论文（2027-08-23—08-29）<a class="heading-anchor" href="#w53" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 完成第三篇限时论文，让可用性和安全措施对应指标、故障与威胁。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-53">学习支持<a class="heading-anchor" href="#学习支持-53" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 回查官方教程第 4、9、18、20 章。</li><li><strong>视频支持：</strong> 论文专题：高可用/可靠性、安全架构。</li><li><strong>工具 / 模板支持：</strong> SLO/RTO/RPO、威胁模型、故障流程、自评表。</li></ul>
+<h5 id="本周关键难点-53">本周关键难点<a class="heading-anchor" href="#本周关键难点-53" aria-label="链接到本节">#</a></h5>
+<p>写‘加强安全、做好备份’无法得分；必须具体到控制、流程和指标。</p>
+<h5 id="任务清单-53">任务清单<a class="heading-anchor" href="#任务清单-53" aria-label="链接到本节">#</a></h5>
+<ol><li>提纲（1.5h）：高可用、安全各完成详细提纲。</li><li>写作（2h）：任选一题完成第 3 篇限时全文。</li><li>验证（1h）：逐项检查措施与故障/威胁、指标映射。</li><li>重写（2h）：比较前三篇，重写最弱一篇的核心段；综合 30 题、案例 1 道。</li></ol>
+<h5 id="三科融合-53">三科融合<a class="heading-anchor" href="#三科融合-53" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：30 道安全/可靠性混合题。</li><li>案例：1 道高可用或安全题。</li><li>论文：2 提纲、1 全文、跨篇重写。</li></ul>
+<h5 id="本周交付物-53">本周交付物<a class="heading-anchor" href="#本周交付物-53" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="312"><span>两份提纲</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="313"><span>第 3 篇限时论文</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="314"><span>措施追踪表</span></label></li></ul>
+<h5 id="验收标准-53">验收标准<a class="heading-anchor" href="#验收标准-53" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="315"><span>120 分钟内完成。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="316"><span>措施均对应具体故障或威胁。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="317"><span>至少包含三项量化结果或目标。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-53">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-53" aria-label="链接到本节">#</a></h5>
+<p>完成两提纲和一篇主体草稿。</p>
+<h4 id="w54">W54｜数据/演化论文与 P4 验收（2027-08-30—09-05）<a class="heading-anchor" href="#w54" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 完成八主题闭环，并用一套近年整题检验案例与论文强化效果。</blockquote>
+<p><strong>建议投入：</strong> 8～10 小时</p>
+<h5 id="学习支持-54">学习支持<a class="heading-anchor" href="#学习支持-54" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 回查官方教程第 10、19、20 章；2024/2025 真题。</li><li><strong>视频支持：</strong> 对应论文主题和近年真题解析，仅在作答后观看。</li><li><strong>工具 / 模板支持：</strong> 近年整卷、论文素材矩阵、P4 验收表。</li></ul>
+<h5 id="本周关键难点-54">本周关键难点<a class="heading-anchor" href="#本周关键难点-54" aria-label="链接到本节">#</a></h5>
+<p>论文训练挤掉综合；本周必须恢复完整三科节奏。</p>
+<h5 id="任务清单-54">任务清单<a class="heading-anchor" href="#任务清单-54" aria-label="链接到本节">#</a></h5>
+<ol><li>提纲（1.5h）：数据架构、架构演化各完成详细提纲。</li><li>模考（4h）：完成一套综合+案例连考。</li><li>论文（2h）：任选新主题完成完整提纲或限时全文。</li><li>复盘（1h）：统计八主题、三全文、重写和案例成绩。</li></ol>
+<h5 id="三科融合-54">三科融合<a class="heading-anchor" href="#三科融合-54" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：近年整卷。</li><li>案例：与综合连考。</li><li>论文：完成最后两主题并验收素材库。</li></ul>
+<h5 id="本周交付物-54">本周交付物<a class="heading-anchor" href="#本周交付物-54" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="318"><span>八主题完整提纲库</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="319"><span>近年整卷成绩</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="320"><span>P4 阶段复盘</span></label></li></ul>
+<h5 id="验收标准-54">验收标准<a class="heading-anchor" href="#验收标准-54" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="321"><span>综合不低于 50 分、案例不低于 48 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="322"><span>具备 8 提纲、3 全文、至少 1 重写稿。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="323"><span>每个主题均能在 10 分钟内搭出正文结构。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-54">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-54" aria-label="链接到本节">#</a></h5>
+<p>完成一套综合+案例和两份新主题提纲。</p>
+<hr>
+<h3 id="p5-全真模拟与补弱-w55-w60">P5：全真模拟与补弱（W55～W60）<a class="heading-anchor" href="#p5-全真模拟与补弱-w55-w60" aria-label="链接到本节">#</a></h3>
+<ul><li><strong>阶段目标：</strong> 稳定三科成绩、时间分配和机考输入，消除高风险弱点。</li><li><strong>阶段核心支持：</strong> 2024～2027 近年真题、机考模拟环境、个人错题库和压缩笔记。</li><li><strong>阶段出口：</strong> 连续 3 次全科不低于 48 分，考试流程和状态可重复。</li></ul>
+<h4 id="w55">W55｜全科模考 1 与时间基线（2027-09-06—09-12）<a class="heading-anchor" href="#w55" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 完成第一次真实节奏三科模拟，找出时间和体力问题。</blockquote>
+<p><strong>建议投入：</strong> 12～14 小时</p>
+<h5 id="学习支持-55">学习支持<a class="heading-anchor" href="#学习支持-55" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 近年真题；错题按题号回查官方教程。</li><li><strong>视频支持：</strong> 仅看本套真题解析和明确弱项的小节。</li><li><strong>工具 / 模板支持：</strong> 240 分钟连考环境、120 分钟论文环境、模考复盘表。</li></ul>
+<h5 id="本周关键难点-55">本周关键难点<a class="heading-anchor" href="#本周关键难点-55" aria-label="链接到本节">#</a></h5>
+<p>知识会但时间失控；记录每部分用时，不在模考中查资料。</p>
+<h5 id="任务清单-55">任务清单<a class="heading-anchor" href="#任务清单-55" aria-label="链接到本节">#</a></h5>
+<ol><li>周六（4h）：连续完成综合+案例，完整记录时间。</li><li>周日（2h）：完成限时论文。</li><li>复盘（2h）：按知识/审题/表达/时间/状态分类失分。</li><li>补弱（1h）：只修最高损失的一个模块。</li></ol>
+<h5 id="三科融合-55">三科融合<a class="heading-anchor" href="#三科融合-55" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：完整。</li><li>案例：完整且与综合连考。</li><li>论文：完整限时。</li></ul>
+<h5 id="本周交付物-55">本周交付物<a class="heading-anchor" href="#本周交付物-55" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="324"><span>三科成绩</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="325"><span>时间分配记录</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="326"><span>模考 1 修复清单</span></label></li></ul>
+<h5 id="验收标准-55">验收标准<a class="heading-anchor" href="#验收标准-55" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="327"><span>三科均不低于 45 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="328"><span>完整记录各部分用时和失分原因。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="329"><span>确定下一次综合交卷目标时间。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-55">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-55" aria-label="链接到本节">#</a></h5>
+<p>完成综合+案例连考和复盘；论文可在 48 小时内补做。</p>
+<h4 id="w56">W56｜全科模考 2 与机考操作（2027-09-13—09-19）<a class="heading-anchor" href="#w56" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 把三科提高到安全线，并固定综合提前交卷和案例输入节奏。</blockquote>
+<p><strong>建议投入：</strong> 12～14 小时</p>
+<h5 id="学习支持-56">学习支持<a class="heading-anchor" href="#学习支持-56" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 另一套近年真题、个人错题库。</li><li><strong>视频支持：</strong> 真题解析；当年官方机考说明/模拟系统。</li><li><strong>工具 / 模板支持：</strong> 机考式编辑环境、绘图方式、输入法、计时器。</li></ul>
+<h5 id="本周关键难点-56">本周关键难点<a class="heading-anchor" href="#本周关键难点-56" aria-label="链接到本节">#</a></h5>
+<p>机考编辑和画图会吞噬时间；提前演练复制、分点、修改和图形表达。</p>
+<h5 id="任务清单-56">任务清单<a class="heading-anchor" href="#任务清单-56" aria-label="链接到本节">#</a></h5>
+<ol><li>补弱（2h）：修复模考 1 最高失分项。</li><li>模考（4h）：完成综合+案例，综合目标 120～130 分钟交卷。</li><li>论文（2h）：完成第 4 篇限时全文。</li><li>操作（1h）：专项练习案例分点、图形、输入和检查。</li></ol>
+<h5 id="三科融合-56">三科融合<a class="heading-anchor" href="#三科融合-56" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：完整且控制时间。</li><li>案例：使用节省出的时间。</li><li>论文：第 4 篇限时全文。</li></ul>
+<h5 id="本周交付物-56">本周交付物<a class="heading-anchor" href="#本周交付物-56" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="330"><span>模考 2 成绩</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="331"><span>机考操作清单</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="332"><span>第 4 篇论文</span></label></li></ul>
+<h5 id="验收标准-56">验收标准<a class="heading-anchor" href="#验收标准-56" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="333"><span>三科均不低于 48 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="334"><span>综合在目标时间内完成。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="335"><span>机考操作没有造成大段返工。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-56">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-56" aria-label="链接到本节">#</a></h5>
+<p>完成连考和一个 60 分钟论文主体。</p>
+<h4 id="w57">W57｜全科模考 3 与最新题型校准（2027-09-20—09-26）<a class="heading-anchor" href="#w57" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 验证成绩稳定性，并只吸收 2027 上半年真实出现的新变化。</blockquote>
+<p><strong>建议投入：</strong> 12～14 小时</p>
+<h5 id="学习支持-57">学习支持<a class="heading-anchor" href="#学习支持-57" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 2027 上半年可靠回忆题/正式发布材料（若有）、新版官方通知。</li><li><strong>视频支持：</strong> 最新考情解析必须与可靠题源交叉验证。</li><li><strong>工具 / 模板支持：</strong> 新旧题变化表、模考记录、知识卡。</li></ul>
+<h5 id="本周关键难点-57">本周关键难点<a class="heading-anchor" href="#本周关键难点-57" aria-label="链接到本节">#</a></h5>
+<p>考前营销会制造‘大改’焦虑；只有真实题目和官方通知才能扩展范围。</p>
+<h5 id="任务清单-57">任务清单<a class="heading-anchor" href="#任务清单-57" aria-label="链接到本节">#</a></h5>
+<ol><li>校准（1.5h）：对比最新题与现有知识图，标注真新增。</li><li>模考（4h）：完成第三次综合+案例。</li><li>论文（2h）：限时完成一篇随机主题提纲+主体。</li><li>复盘（2h）：计算最近三套均分和波动原因。</li></ol>
+<h5 id="三科融合-57">三科融合<a class="heading-anchor" href="#三科融合-57" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：最新或另一套近年整卷。</li><li>案例：完整连考。</li><li>论文：随机主题迁移能力。</li></ul>
+<h5 id="本周交付物-57">本周交付物<a class="heading-anchor" href="#本周交付物-57" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="336"><span>新旧题变化表</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="337"><span>三套均分趋势</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="338"><span>新增知识卡</span></label></li></ul>
+<h5 id="验收标准-57">验收标准<a class="heading-anchor" href="#验收标准-57" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="339"><span>最近三套综合平均不低于 52、案例不低于 50。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="340"><span>新增卡片均有可靠题源依据。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="341"><span>随机题 10 分钟内完成结构。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-57">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-57" aria-label="链接到本节">#</a></h5>
+<p>完成连考、变化表和三套成绩统计。</p>
+<h4 id="w58">W58｜红色错题清零与论文重写（2027-09-27—10-03）<a class="heading-anchor" href="#w58" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 消除反复失分的高风险知识点，提高论文结构与表达稳定性。</blockquote>
+<p><strong>建议投入：</strong> 12～15 小时</p>
+<h5 id="学习支持-58">学习支持<a class="heading-anchor" href="#学习支持-58" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 个人错题对应的官方教程页；前三篇论文。</li><li><strong>视频支持：</strong> 仅看红色错题对应短小节，不看完整新课。</li><li><strong>工具 / 模板支持：</strong> 红黄绿错题表、论文对照重写表。</li></ul>
+<h5 id="本周关键难点-58">本周关键难点<a class="heading-anchor" href="#本周关键难点-58" aria-label="链接到本节">#</a></h5>
+<p>容易追求错题数量；只处理重复错、核心错和高频计算。</p>
+<h5 id="任务清单-58">任务清单<a class="heading-anchor" href="#任务清单-58" aria-label="链接到本节">#</a></h5>
+<ol><li>错题（3h）：复做全部红色错题并口述理由。</li><li>论文（4h）：完成第 5 篇全文，重写两篇历史论文核心部分。</li><li>案例（2h）：完成最弱专题 2 道。</li><li>压缩（1h）：删除已经稳定掌握的冲刺笔记。</li></ol>
+<h5 id="三科融合-58">三科融合<a class="heading-anchor" href="#三科融合-58" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：红色错题与 40 道混合题。</li><li>案例：最弱专题 2 道。</li><li>论文：第 5 篇全文和两次重写。</li></ul>
+<h5 id="本周交付物-58">本周交付物<a class="heading-anchor" href="#本周交付物-58" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="342"><span>红色错题清零记录</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="343"><span>第 5 篇论文</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="344"><span>两份重写稿</span></label></li></ul>
+<h5 id="验收标准-58">验收标准<a class="heading-anchor" href="#验收标准-58" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="345"><span>红色错题二次正确率不低于 85%。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="346"><span>论文十项自评均不低于 14/20。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="347"><span>没有连续三次仍答错且未处理的核心题。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-58">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-58" aria-label="链接到本节">#</a></h5>
+<p>完成红色错题、1 篇全文或 2 个核心重写段。</p>
+<h4 id="w59">W59｜全科模考 4 与知识压缩（2027-10-04—10-10）<a class="heading-anchor" href="#w59" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 守住三科安全分，并把冲刺资料压缩到真正可复习的规模。</blockquote>
+<p><strong>建议投入：</strong> 12～15 小时</p>
+<h5 id="学习支持-59">学习支持<a class="heading-anchor" href="#学习支持-59" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 近年整卷、个人笔记；停止扩展教材。</li><li><strong>视频支持：</strong> 只看模考错题解析。</li><li><strong>工具 / 模板支持：</strong> 30 页以内冲刺笔记、公式卡、论文提纲卡。</li></ul>
+<h5 id="本周关键难点-59">本周关键难点<a class="heading-anchor" href="#本周关键难点-59" aria-label="链接到本节">#</a></h5>
+<p>冲刺资料越堆越多；只保留高频、易错和个人薄弱。</p>
+<h5 id="任务清单-59">任务清单<a class="heading-anchor" href="#任务清单-59" aria-label="链接到本节">#</a></h5>
+<ol><li>模考（6h）：完整三科模拟。</li><li>复盘（2h）：当天完成失分分析和重点重做。</li><li>压缩（2h）：形成总图、公式、易混、案例词和论文提纲。</li><li>状态（1h）：复盘饮食、休息和用时。</li></ol>
+<h5 id="三科融合-59">三科融合<a class="heading-anchor" href="#三科融合-59" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：完整。</li><li>案例：完整。</li><li>论文：完整。</li></ul>
+<h5 id="本周交付物-59">本周交付物<a class="heading-anchor" href="#本周交付物-59" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="348"><span>模考 4 成绩</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="349"><span>30 页以内冲刺资料</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="350"><span>考试日流程草案</span></label></li></ul>
+<h5 id="验收标准-59">验收标准<a class="heading-anchor" href="#验收标准-59" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="351"><span>三科均不低于 48 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="352"><span>冲刺资料可在 3 小时内完整复习。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="353"><span>所有计算公式都标注适用条件。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-59">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-59" aria-label="链接到本节">#</a></h5>
+<p>完成三科模拟和 10 页核心压缩笔记。</p>
+<h4 id="w60">W60｜最后全真验证与范围冻结（2027-10-11—10-17）<a class="heading-anchor" href="#w60" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 证明考试能力可重复，随后停止新增课程和资料。</blockquote>
+<p><strong>建议投入：</strong> 12～15 小时</p>
+<h5 id="学习支持-60">学习支持<a class="heading-anchor" href="#学习支持-60" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 最后一套可用整卷、个人冲刺资料。</li><li><strong>视频支持：</strong> 不看新课程；只回看个人明确弱项片段。</li><li><strong>工具 / 模板支持：</strong> 与考试日一致的作息、输入法、计时和后勤清单。</li></ul>
+<h5 id="本周关键难点-60">本周关键难点<a class="heading-anchor" href="#本周关键难点-60" aria-label="链接到本节">#</a></h5>
+<p>最后一套波动会引发慌乱；用最近多套均值判断，不因单题改路线。</p>
+<h5 id="任务清单-60">任务清单<a class="heading-anchor" href="#任务清单-60" aria-label="链接到本节">#</a></h5>
+<ol><li>全真（6h）：按预计考试日时间完成三科。</li><li>复盘（2h）：只修致命知识错误和时间问题。</li><li>冻结（1h）：锁定最终复习清单，拒绝新资料。</li><li>后勤（1h）：检查报名、准考证时间、路线、证件和作息。</li></ol>
+<h5 id="三科融合-60">三科融合<a class="heading-anchor" href="#三科融合-60" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：最后完整验证。</li><li>案例：最后完整验证。</li><li>论文：最后完整验证。</li></ul>
+<h5 id="本周交付物-60">本周交付物<a class="heading-anchor" href="#本周交付物-60" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="354"><span>最后模考成绩</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="355"><span>冻结版复习清单</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="356"><span>考务后勤清单</span></label></li></ul>
+<h5 id="验收标准-60">验收标准<a class="heading-anchor" href="#验收标准-60" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="357"><span>连续三次全科均不低于 48 分。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="358"><span>没有未覆盖的核心专题。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="359"><span>考试日流程已实际模拟一次。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-60">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-60" aria-label="链接到本节">#</a></h5>
+<p>完成三科全真与后勤清单；复盘限于最高风险项。</p>
+<hr>
+<h3 id="p6-考前与考试-w61-w62">P6：考前与考试（W61～W62）<a class="heading-anchor" href="#p6-考前与考试-w61-w62" aria-label="链接到本节">#</a></h3>
+<ul><li><strong>阶段目标：</strong> 保持状态、完成考务、平稳应考并留存复盘。</li><li><strong>阶段核心支持：</strong> 个人总图、公式卡、论文提纲、准考证和官方考务通知。</li><li><strong>阶段出口：</strong> 按正式安排完成考试，避免因后勤、作息或临时换资料造成失误。</li></ul>
+<h4 id="w61">W61｜轻量复习与状态保持（2027-10-18—10-24）<a class="heading-anchor" href="#w61" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 保持熟练度和睡眠，不再用高强度学习制造新波动。</blockquote>
+<p><strong>建议投入：</strong> 5～7 小时</p>
+<h5 id="学习支持-61">学习支持<a class="heading-anchor" href="#学习支持-61" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 个人总图、公式卡、红色错题和八个论文提纲。</li><li><strong>视频支持：</strong> 停止常规视频；只在必要时看 10 分钟以内个人弱项。</li><li><strong>工具 / 模板支持：</strong> 准考证、证件袋、路线、闹钟和个人复习卡。</li></ul>
+<h5 id="本周关键难点-61">本周关键难点<a class="heading-anchor" href="#本周关键难点-61" aria-label="链接到本节">#</a></h5>
+<p>临考焦虑会驱动押题和通宵；按既定安全分相信长期训练。</p>
+<h5 id="任务清单-61">任务清单<a class="heading-anchor" href="#任务清单-61" aria-label="链接到本节">#</a></h5>
+<ol><li>复习（每天 60～90 分钟）：总图、公式、错题、论文提纲轮换。</li><li>手感（隔天 30 分钟）：少量熟题和一个案例小问。</li><li>状态：按考试日起床、进餐和午休节奏生活。</li><li>后勤：打印准考证并核实时间、考点、交通和证件。</li></ol>
+<h5 id="三科融合-61">三科融合<a class="heading-anchor" href="#三科融合-61" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：只做熟题保持判断。</li><li>案例：只练分点表达。</li><li>论文：每天口述一个主题结构，不再频繁写全文。</li></ul>
+<h5 id="本周交付物-61">本周交付物<a class="heading-anchor" href="#本周交付物-61" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="360"><span>最终证件/路线清单</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="361"><span>八主题口述记录</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="362"><span>睡眠与状态记录</span></label></li></ul>
+<h5 id="验收标准-61">验收标准<a class="heading-anchor" href="#验收标准-61" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="363"><span>平均睡眠不少于 7 小时。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="364"><span>八主题均能在 5 分钟内口述结构。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="365"><span>不参加来源不明的押题和临时课程。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-61">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-61" aria-label="链接到本节">#</a></h5>
+<p>完成后勤检查，每天 30 分钟总图/提纲复习。</p>
+<h4 id="w62">W62｜考试或机动周（2027-10-25—10-31）<a class="heading-anchor" href="#w62" aria-label="链接到本节">#</a></h4>
+<blockquote><strong>本周目标：</strong> 按正式日期平稳完成考试；若日期有调整，则保持轻量节奏。</blockquote>
+<p><strong>建议投入：</strong> 以正式考试安排为准</p>
+<h5 id="学习支持-62">学习支持<a class="heading-anchor" href="#学习支持-62" aria-label="链接到本节">#</a></h5>
+<ul><li><strong>教材支持：</strong> 只使用冻结版个人资料和当年官方考务通知。</li><li><strong>视频支持：</strong> 不看视频和押题直播。</li><li><strong>工具 / 模板支持：</strong> 准考证、有效证件、路线与考试日物品。</li></ul>
+<h5 id="本周关键难点-62">本周关键难点<a class="heading-anchor" href="#本周关键难点-62" aria-label="链接到本节">#</a></h5>
+<p>最后时刻最容易改变策略；题目陌生时也按时间和分值执行。</p>
+<h5 id="任务清单-62">任务清单<a class="heading-anchor" href="#任务清单-62" aria-label="链接到本节">#</a></h5>
+<ol><li>考前一天：停止高强度学习，检查证件和路线。</li><li>综合：先易后难，按既定时间交卷给案例留足时间。</li><li>案例：先选题，再按结论—依据—措施—效果分点作答。</li><li>论文：先审全部子问和列提纲，再写正文；考后记录题型与感受。</li></ol>
+<h5 id="三科融合-62">三科融合<a class="heading-anchor" href="#三科融合-62" aria-label="链接到本节">#</a></h5>
+<ul><li>综合：执行时间策略。</li><li>案例：执行选题与分点策略。</li><li>论文：执行审题、提纲、正文和检查策略。</li></ul>
+<h5 id="本周交付物-62">本周交付物<a class="heading-anchor" href="#本周交付物-62" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="366"><span>完成考试</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="367"><span>考后题型与状态复盘</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="368"><span>后续结果查询提醒</span></label></li></ul>
+<h5 id="验收标准-62">验收标准<a class="heading-anchor" href="#验收标准-62" aria-label="链接到本节">#</a></h5>
+<ul><li><label class="check-item"><input type="checkbox" data-plan-check="369"><span>按正式安排参加全部科目。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="370"><span>每科均完成检查且没有因时间遗留大段空白。</span></label></li><li><label class="check-item"><input type="checkbox" data-plan-check="371"><span>考后只记录事实，不反复对来源不明答案。</span></label></li></ul>
+<h5 id="忙碌周最低完成线-62">忙碌周最低完成线<a class="heading-anchor" href="#忙碌周最低完成线-62" aria-label="链接到本节">#</a></h5>
+<p>完成考试；若本周不是考试周，则沿用 W61 轻量计划。</p>
+<h2 id="8-各模块难点-掌握深度与实践方法">8. 各模块难点、掌握深度与实践方法<a class="heading-anchor" href="#8-各模块难点-掌握深度与实践方法" aria-label="链接到本节">#</a></h2>
+<div class="table-wrap"><table><thead><tr><th>模块</th><th>主要难点</th><th>软考需要达到的深度</th><th>最有效的实践</th></tr></thead><tbody><tr><td>计算机组成</td><td>补码、Cache、流水线、可靠性计算</td><td>会算典型题，会解释性能影响；无需深入电路设计</td><td>画存储层次图，集中做计算题，整理公式触发条件</td></tr><tr><td>操作系统</td><td>PV、死锁、分页、页面置换</td><td>能手算、能画状态、能解释机制</td><td>用 Node 模拟 LRU；观察真实进程和内存；PV 先画依赖再写操作</td></tr><tr><td>数据结构</td><td>树、图、复杂度和排序混淆</td><td>会判断结构用途和复杂度，掌握典型算法</td><td>TypeScript 实现遍历、哈希、LRU，不刷大量 LeetCode 难题</td></tr><tr><td>网络</td><td>分层、子网、TCP、协议职责</td><td>能从端到端解释一次请求并完成子网计算</td><td>DevTools、curl、ping、traceroute、nslookup；画数据封装图</td></tr><tr><td>数据库</td><td>范式、关系代数、事务隔离、锁和索引</td><td>会设计 ER、SQL、规范化；能解释事务异常与优化</td><td>实际建表、EXPLAIN、并发事务实验</td></tr><tr><td>软件工程</td><td>开发模型、需求、UML 图和模式易混</td><td>能按场景选方法，用规范图表达设计</td><td>给同一实践项目持续补用例图、类图、顺序图、部署图</td></tr><tr><td>信息安全</td><td>算法、协议、攻击和管理措施碎片化</td><td>能按机密性/完整性/可用性和具体威胁匹配控制</td><td>STRIDE 威胁建模；把 XSS/CSRF/鉴权与系统边界关联</td></tr><tr><td>架构风格</td><td>名称多、优缺点容易死背</td><td>能识别、比较、组合并说明权衡</td><td>为 10 个业务场景做选型；每个选择至少写一个代价</td></tr><tr><td>质量属性</td><td>属性、场景、战术容易混淆</td><td>能写六要素场景，能从场景推导战术</td><td>为实践项目写 12 个可度量场景并做 ATAM 简化评估</td></tr><tr><td>可靠性</td><td>公式和工程措施脱节</td><td>会算可用性、可靠度，能说明容错/恢复策略</td><td>设计故障注入，记录恢复时间和数据影响</td></tr><tr><td>云原生/微服务</td><td>容易堆砌 Docker、K8s、网关等名词</td><td>能说明使用条件、服务边界、通信、数据和运维代价</td><td>单体逐步演化为异步任务或两个服务，保留 ADR</td></tr><tr><td>大数据</td><td>名词密集、缺少真实场景</td><td>理解批流、湖仓、数据处理流程和选型维度</td><td>为日志分析设计采集、存储、计算和展示链路</td></tr><tr><td>案例分析</td><td>知道知识但写不到评分点</td><td>按题干提取信息，分点使用规范术语，回答理由与效果</td><td>先闭卷答，再按评分点重写；建立“题型—关键词”表</td></tr><tr><td>论文</td><td>理论多、项目少、偏题、时间不足</td><td>紧扣子题，体现本人职责、方法、权衡和效果</td><td>提纲→段落→全文→限时→重写；全过程电脑输入</td></tr></tbody></table></div>
+<hr>
+<h2 id="9-贯穿式架构实践项目">9. 贯穿式架构实践项目<a class="heading-anchor" href="#9-贯穿式架构实践项目" aria-label="链接到本节">#</a></h2>
+<h3 id="9-1-项目题目">9.1 项目题目<a class="heading-anchor" href="#9-1-项目题目" aria-label="链接到本节">#</a></h3>
+<p>建议采用“在线报告与图片处理平台”，也可以替换为自己真实参与过且熟悉业务的前端项目。示例业务：</p>
+<ul><li>用户登录并管理报告。</li><li>报告包含文字、表格和多张图片。</li><li>图片上传后异步压缩、审核或生成缩略图。</li><li>用户可以查看处理进度和历史版本。</li><li>管理员可以审计操作、统计使用情况。</li><li>系统需要应对高峰上传、失败重试、权限隔离和数据备份。</li></ul>
+<p>这个场景能覆盖数据库、缓存、消息队列、对象存储、微服务、高可用、安全、大数据与论文常见主题。</p>
+<h3 id="9-2-建议技术栈">9.2 建议技术栈<a class="heading-anchor" href="#9-2-建议技术栈" aria-label="链接到本节">#</a></h3>
+<pre><code class="language-text">前端：现有熟悉框架
+API：TypeScript + Node.js
+数据库：PostgreSQL 或 MySQL
+缓存：Redis
+异步处理：RabbitMQ
+入口：Nginx
+部署：Docker Compose
+压测：k6 或 JMeter
+图：Mermaid / draw.io / PlantUML</code></pre>
+<p>对象存储可使用 MinIO，也可以只设计接口而不实际部署。Kubernetes 不是必做项；理解其解决的问题比搭建复杂集群重要。</p>
+<h3 id="9-3-八步演化">9.3 八步演化<a class="heading-anchor" href="#9-3-八步演化" aria-label="链接到本节">#</a></h3>
+<ol><li><strong>业务与需求</strong>：用户、用例、业务规则、数据分类、5 条质量属性。</li><li><strong>分层单体</strong>：前端、API、业务层、数据访问层、数据库。</li><li><strong>数据设计</strong>：ER 图、表结构、事务边界、索引方案。</li><li><strong>性能优化</strong>：Redis 缓存、分页、连接池、静态资源与 CDN 设计。</li><li><strong>异步化</strong>：消息队列处理图片，补充幂等、重试、死信和状态查询。</li><li><strong>服务化</strong>：只拆最有理由的一个服务，处理通信、数据归属和故障。</li><li><strong>安全与可靠性</strong>：认证、授权、审计、限流、备份、健康检查、降级。</li><li><strong>压测与评估</strong>：给出指标、瓶颈、架构风险、改进和复测结果。</li></ol>
+<h3 id="9-4-必须产出的架构材料">9.4 必须产出的架构材料<a class="heading-anchor" href="#9-4-必须产出的架构材料" aria-label="链接到本节">#</a></h3>
+<ul><li>1 张系统上下文图。</li><li>1 张容器/逻辑架构图。</li><li>1 张部署图。</li><li>1 张 ER 图。</li><li>3 张关键顺序图：登录、上传、异步处理。</li><li>12 条质量属性场景。</li><li>8～10 条 ADR（架构决策记录）。</li><li>1 份威胁模型。</li><li>1 份压测报告。</li><li>1 份架构评估记录。</li><li>1 份项目素材表，供论文使用。</li></ul>
+<h3 id="9-5-adr-模板">9.5 ADR 模板<a class="heading-anchor" href="#9-5-adr-模板" aria-label="链接到本节">#</a></h3>
+<pre><code class="language-text">标题：为什么在图片处理中使用消息队列
+状态：提议 / 已接受 / 已废弃
+背景与约束：
+候选方案：同步处理 / 数据库任务表 / 消息队列
+决策：
+理由：
+收益：
+代价与风险：
+验证指标：
+回退方案：</code></pre>
+<p>实践每两周投入 1.5～2 小时即可。不要为了“做得像生产系统”挤占真题和论文时间。</p>
+<hr>
+<h2 id="10-综合知识备考方法">10. 综合知识备考方法<a class="heading-anchor" href="#10-综合知识备考方法" aria-label="链接到本节">#</a></h2>
+<h3 id="10-1-三轮策略">10.1 三轮策略<a class="heading-anchor" href="#10-1-三轮策略" aria-label="链接到本节">#</a></h3>
+<p>第一轮（W03～W44）：</p>
+<ul><li>章节学习后立即做题。</li><li>正确率目标从 50% 逐渐提高到 65%。</li><li>重点是覆盖全部大纲，不因某一章困难停两个月。</li></ul>
+<p>第二轮（W45～W54）：</p>
+<ul><li>分类真题与完整年度题结合。</li><li>每次把错误映射回教材章节。</li><li>将高频计算、易混概念、标准法规压缩成个人笔记。</li></ul>
+<p>第三轮（W55～W60）：</p>
+<ul><li>严格计时做完整卷。</li><li>训练 120～130 分钟内完成综合，把更多时间留给案例。</li><li>不再系统观看新课程，只补真实失分点。</li></ul>
+<h3 id="10-2-单选题处理">10.2 单选题处理<a class="heading-anchor" href="#10-2-单选题处理" aria-label="链接到本节">#</a></h3>
+<ul><li>第一遍做确定题，单题超过 90 秒仍无思路就标记。</li><li>计算题先写单位、公式和已知量，避免直接心算。</li><li>遇到绝对化表述要谨慎，但不能把“绝对化就错”当成规则。</li><li>专业英语先看问题和选项，再定位原文关键词。</li><li>模糊题先排除明显错误项，不在一题上消耗案例时间。</li></ul>
+<hr>
+<h2 id="11-案例分析备考方法">11. 案例分析备考方法<a class="heading-anchor" href="#11-案例分析备考方法" aria-label="链接到本节">#</a></h2>
+<h3 id="11-1-标准答题结构">11.1 标准答题结构<a class="heading-anchor" href="#11-1-标准答题结构" aria-label="链接到本节">#</a></h3>
+<p>大多数问答可按以下结构：</p>
+<pre><code class="language-text">结论：明确写出方案、问题或术语。
+依据：引用题干中的业务、约束、指标或现象。
+理由：说明为什么产生问题或为什么方案有效。
+措施：按 1、2、3 分点，使用规范术语。
+效果/代价：说明改善的质量属性及引入的成本或风险。</code></pre>
+<h3 id="11-2-案例训练的四遍法">11.2 案例训练的四遍法<a class="heading-anchor" href="#11-2-案例训练的四遍法" aria-label="链接到本节">#</a></h3>
+<ol><li>闭卷限时作答。</li><li>对照参考答案标出评分关键词。</li><li>回到教程找知识来源，不只抄答案。</li><li>24 小时后只看题干重新作答。</li></ol>
+<h3 id="11-3-选答题策略">11.3 选答题策略<a class="heading-anchor" href="#11-3-选答题策略" aria-label="链接到本节">#</a></h3>
+<ul><li>先用 3～5 分钟浏览所有题，判断“会的分值”而不是判断题目看起来熟不熟。</li><li>优先选择能写出具体技术措施和理由的题。</li><li>对嵌入式、通信等非主攻方向，保留基础得分能力，但不为了少量可能分值投入过多时间。</li><li>每道题按分值控制答案点数，6 分问题通常至少准备 3～6 个明确得分点。</li></ul>
+<hr>
+<h2 id="12-论文备考系统">12. 论文备考系统<a class="heading-anchor" href="#12-论文备考系统" aria-label="链接到本节">#</a></h2>
+<h3 id="12-1-项目素材必须来自真实经历">12.1 项目素材必须来自真实经历<a class="heading-anchor" href="#12-1-项目素材必须来自真实经历" aria-label="链接到本节">#</a></h3>
+<p>可以对真实项目信息脱敏，并从系统角度补充自己实际参与、调研或验证过的架构工作；不能背一篇完全不理解的虚构范文。项目素材表至少包含：</p>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>要记录的内容</th></tr></thead><tbody><tr><td>业务背景</td><td>用户是谁、解决什么问题、为什么建设</td></tr><tr><td>规模</td><td>用户量、并发、数据量、团队、工期；不清楚就查真实资料，不凭空夸大</td></tr><tr><td>本人职责</td><td>需求讨论、技术调研、方案设计、前端架构、接口、安全、性能或部署中的真实工作</td></tr><tr><td>关键约束</td><td>工期、旧系统、预算、团队能力、合规、兼容性</td></tr><tr><td>质量目标</td><td>响应时间、可用性、恢复时间、安全、可修改性</td></tr><tr><td>架构方案</td><td>风格、模块、数据、通信、部署</td></tr><tr><td>决策权衡</td><td>为什么选择；放弃什么；引入什么代价</td></tr><tr><td>问题与解决</td><td>故障、性能瓶颈、需求变化、数据一致性、协作问题</td></tr><tr><td>结果</td><td>指标变化、交付效果、遗留问题和改进计划</td></tr></tbody></table></div>
+<h3 id="12-2-八个优先主题">12.2 八个优先主题<a class="heading-anchor" href="#12-2-八个优先主题" aria-label="链接到本节">#</a></h3>
+<ol><li>软件架构风格及其应用。</li><li>系统质量属性与架构评估。</li><li>微服务或面向服务架构。</li><li>云原生架构。</li><li>高可用、可靠性与容错。</li><li>安全架构。</li><li>数据架构、大数据或缓存/消息应用。</li><li>架构演化、系统集成或遗留系统改造。</li></ol>
+<p>正式考试主题可能不同，所以训练重点是“一套项目素材如何按题意重新组织”，不是背八篇固定范文。</p>
+<h3 id="12-3-训练用结构">12.3 训练用结构<a class="heading-anchor" href="#12-3-训练用结构" aria-label="链接到本节">#</a></h3>
+<p>具体字数以 2027 年试题要求为准。平时可按以下目标训练：</p>
+<pre><code class="language-text">摘要：约 300～350 字
+正文：约 2200～2600 字
+
+一、项目背景和本人职责
+二、题目要求的理论或方法概述
+三、结合项目逐项论述实施过程（全文核心）
+四、效果、问题、改进与总结</code></pre>
+<p>正文第三部分必须占最大篇幅，并逐条回应题目给出的子问题。</p>
+<h3 id="12-4-每篇论文自评表">12.4 每篇论文自评表<a class="heading-anchor" href="#12-4-每篇论文自评表" aria-label="链接到本节">#</a></h3>
+<p>每项按 0～2 分检查：</p>
+<ul><li>是否完整回应题目全部子问题。</li><li>摘要是否直接交代项目、职责、方法和结果。</li><li>项目背景是否具体可信。</li><li>本人是否是架构工作参与者，而非旁观者。</li><li>每个理论点是否都有项目措施对应。</li><li>是否写出选择理由和权衡。</li><li>是否出现量化或可验证结果。</li><li>是否有问题、局限和改进，而非全程完美。</li><li>段落标题和逻辑是否清楚。</li><li>是否在 120 分钟内完成并留出检查时间。</li></ul>
+<p>低于 14 分的论文必须重写，不只是修改错别字。</p>
+<h3 id="12-5-机考输入训练">12.5 机考输入训练<a class="heading-anchor" href="#12-5-机考输入训练" aria-label="链接到本节">#</a></h3>
+<ul><li>从 W44 起每周至少一次 20 分钟连续中文输入。</li><li>W50 起全部论文直接在电脑上写，不先手写全文。</li><li>目标不是盲目追求打字速度，而是 100 分钟写完主体、15 分钟补充、5 分钟检查。</li><li>熟悉机考系统允许的图形输入方式和编辑操作；以当年官方模拟系统为准。</li></ul>
+<hr>
+<h2 id="13-月度验收与进度仪表盘">13. 月度验收与进度仪表盘<a class="heading-anchor" href="#13-月度验收与进度仪表盘" aria-label="链接到本节">#</a></h2>
+<p>每四周填写一次：</p>
+<div class="table-wrap"><table><thead><tr><th>指标</th><th>绿色</th><th>黄色</th><th>红色</th></tr></thead><tbody><tr><td>实际学习时长 / 计划时长</td><td>≥85%</td><td>60%～84%</td><td>&lt;60%</td></tr><tr><td>章节题正确率</td><td>≥65%</td><td>50%～64%</td><td>&lt;50%</td></tr><tr><td>到期错题重做正确率</td><td>≥85%</td><td>70%～84%</td><td>&lt;70%</td></tr><tr><td>案例完成量</td><td>达到计划</td><td>少 1～2 道</td><td>少 3 道以上</td></tr><tr><td>论文/素材输出</td><td>达到计划</td><td>延迟一周</td><td>连续两周无输出</td></tr><tr><td>睡眠和状态</td><td>稳定</td><td>偶尔疲劳</td><td>连续两周影响工作生活</td></tr></tbody></table></div>
+<p>调整规则：</p>
+<ul><li>一个红色：下月减少 20% 视频，优先补题目和验收输出。</li><li>两个红色：暂停新专题一周，做差距修复。</li><li>三个红色：把周计划降到最低可持续版本，重新安排，不通过熬夜追赶。</li><li>连续两个月全绿：可以提前进入下一阶段，但不要提前消耗最后三年的完整真题。</li></ul>
+<p>月度复盘只回答五个问题：</p>
+<ol><li>本月真正掌握了什么？证据是什么？</li><li>哪三类题仍在失分？原因是什么？</li><li>哪些视频或笔记没有带来产出，应该停止？</li><li>下月最重要的一个补弱目标是什么？</li><li>时间安排是否可持续？</li></ol>
+<hr>
+<h2 id="14-中断-落后和时间不足时的处理">14. 中断、落后和时间不足时的处理<a class="heading-anchor" href="#14-中断-落后和时间不足时的处理" aria-label="链接到本节">#</a></h2>
+<h3 id="14-1-落后一周">14.1 落后一周<a class="heading-anchor" href="#14-1-落后一周" aria-label="链接到本节">#</a></h3>
+<ul><li>取消非核心补充视频。</li><li>只完成官方教程、主线课程重点、章节题和验收输出。</li><li>不挪用睡眠，不把所有缺课集中到周末。</li></ul>
+<h3 id="14-2-落后两到三周">14.2 落后两到三周<a class="heading-anchor" href="#14-2-落后两到三周" aria-label="链接到本节">#</a></h3>
+<ul><li>将当月所有知识点分成 A/B/C：</li><li class="nested-item">A：架构、质量属性、数据库、网络、软件工程等高价值内容，必须补。</li><li class="nested-item">B：常考基础，补总结和真题。</li><li class="nested-item">C：低频细节，只看一页总结。</li><li>暂停实践编码，但保留架构图、案例和论文素材。</li><li>用一套模块题确认补课是否有效。</li></ul>
+<h3 id="14-3-中断一个月以上">14.3 中断一个月以上<a class="heading-anchor" href="#14-3-中断一个月以上" aria-label="链接到本节">#</a></h3>
+<ul><li>不从第一页重新开始。</li><li>先做 75 道混合题，按失分重新定位。</li><li>用 2 周恢复主动回忆与错题系统，再回到当前阶段。</li><li>如果到 2027 年 8 月仍未完成官方教程第一轮，应停止拓展性实践，集中案例、论文和近年真题。</li></ul>
+<hr>
+<h2 id="15-报名-机考-健康与考前后勤">15. 报名、机考、健康与考前后勤<a class="heading-anchor" href="#15-报名-机考-健康与考前后勤" aria-label="链接到本节">#</a></h2>
+<h3 id="15-1-报名检查">15.1 报名检查<a class="heading-anchor" href="#15-1-报名检查" aria-label="链接到本节">#</a></h3>
+<p>2027 年安排公布后：</p>
+<ul><li>只从中国计算机技术职业资格网或本地考试机构正式入口报名。</li><li>提前准备实名认证、证件照片、缴费方式和属地要求。</li><li>报名后确认缴费状态，不能只提交信息。</li><li>准考证开放后立即下载，确认日期、批次、考点和交通。</li><li>2027 年可能继续上下半年开考，但不能在官方通知前假定具体日期和批次。</li></ul>
+<p>建议在 2027 年 1 月、3 月、7 月、9 月各检查一次官方通知，正式报名期增加到每周检查。</p>
+<h3 id="15-2-机考专项">15.2 机考专项<a class="heading-anchor" href="#15-2-机考专项" aria-label="链接到本节">#</a></h3>
+<ul><li>提前体验当年官方模拟系统。</li><li>练习长时间阅读屏幕、快速标记和回看题目。</li><li>练习案例分点输入、公式和简单架构图表达。</li><li>论文全部使用常用中文输入法训练，不在考前更换输入习惯。</li><li>至少完成三次 4 小时连考，以验证体力、饮水和时间分配。</li></ul>
+<h3 id="15-3-健康与状态">15.3 健康与状态<a class="heading-anchor" href="#15-3-健康与状态" aria-label="链接到本节">#</a></h3>
+<ul><li>每学习 50～90 分钟起身活动。</li><li>考前一个月固定起床与睡眠时间。</li><li>最后两周不通过大量咖啡和熬夜换学习时长。</li><li>全真模拟时测试早餐、午餐、饮水和休息安排。</li><li>考前一天只看个人压缩笔记，准备证件和路线。</li></ul>
+<hr>
+<h2 id="16-前-14-天启动清单">16. 前 14 天启动清单<a class="heading-anchor" href="#16-前-14-天启动清单" aria-label="链接到本节">#</a></h2>
+<p>从 2026-08-24 开始：</p>
+<div class="table-wrap"><table><thead><tr><th>天</th><th>任务</th><th>预计时长</th></tr></thead><tbody><tr><td>Day 1</td><td>阅读本计划第 0～3 节；在日历锁定每周学习时间</td><td>45 分钟</td></tr><tr><td>Day 2</td><td>阅读官方考试大纲的考试说明和范围</td><td>60 分钟</td></tr><tr><td>Day 3</td><td>浏览教程 20 章目录，为每章标记“熟悉/听过/陌生”</td><td>45 分钟</td></tr><tr><td>Day 4</td><td>观看主线课程导学；确定是否使用该主线</td><td>60 分钟</td></tr><tr><td>Day 5</td><td>休息或做 15 分钟专业英语词卡</td><td>0～15 分钟</td></tr><tr><td>Day 6</td><td>限时完成 2020 年综合知识摸底题</td><td>150 分钟</td></tr><tr><td>Day 7</td><td>统计模块得分；只分析错误类型，不开始大规模补课</td><td>90 分钟</td></tr><tr><td>Day 8</td><td>建立笔记、错题、案例、论文目录</td><td>45 分钟</td></tr><tr><td>Day 9</td><td>阅读教程第 1 章并做一页总览图</td><td>60 分钟</td></tr><tr><td>Day 10</td><td>浏览一套案例题，标记完全看不懂的术语</td><td>45 分钟</td></tr><tr><td>Day 11</td><td>整理真实项目 1：业务、用户、职责、技术、问题、结果</td><td>60 分钟</td></tr><tr><td>Day 12</td><td>整理真实项目 2；选择贯穿式实践项目</td><td>60 分钟</td></tr><tr><td>Day 13</td><td>完成考试结构口头复述和个人差距表</td><td>60 分钟</td></tr><tr><td>Day 14</td><td>周复盘；确认 W03 开始计算机组成原理</td><td>45 分钟</td></tr></tbody></table></div>
+<p>前两周结束时应拥有：基线成绩、固定时间表、资料清单、目录结构、两个真实项目素材和一个实践项目题目。</p>
+<hr>
+<h2 id="17-资料来源与版本核对">17. 资料来源与版本核对<a class="heading-anchor" href="#17-资料来源与版本核对" aria-label="链接到本节">#</a></h2>
+<p>以下资料于 2026-08-19 核对：</p>
+<ul><li><a href="https://www.miit.gov.cn/jgsj/rjj/rcgz/art/2020/art_9697b8faa3894e4ba1b27b641970bc62.html">工业和信息化部：计算机技术与软件专业技术资格（水平）考试暂行规定及实施办法</a></li><li><a href="https://rsj.sh.gov.cn/tkwap_17826/20260811/t0035_1443017.html">上海市人力资源和社会保障局：2026 年下半年考试设置、机考和成绩管理说明</a></li><li><a href="https://www.tup.tsinghua.edu.cn/booksCenter/book_09190401.html">清华大学出版社：《系统架构设计师考试大纲》</a></li><li><a href="https://www.tup.tsinghua.edu.cn/bookscenter/book_09190101.html">清华大学出版社：《系统架构设计师教程（第 2 版）》</a></li><li><a href="https://www.tup.tsinghua.edu.cn/upload/books/yz/091904-01.pdf">清华大学出版社：考试大纲样章/考试要求</a></li><li><a href="https://www.tup.tsinghua.edu.cn/bookscenter/book_09377701.html">清华大学出版社：《系统架构设计师 2016 至 2020 年试题分析与解答》</a></li></ul>
+<p>正式报名前应再次核对：2027 年考试日期、开考批次、报名属地要求、题型、机考规则、考试大纲和教材是否更新。</p>
+<hr>
+<h2 id="18-最终提醒">18. 最终提醒<a class="heading-anchor" href="#18-最终提醒" aria-label="链接到本节">#</a></h2>
+<p>系统架构设计师的难点不是某个知识点特别深，而是知识面广、三科必须同次通过。对于前端开发背景，最危险的备考方式是：综合知识刷了很多题，但案例不会把思路写成评分点，论文又拖到考前才开始。</p>
+<p>这份计划刻意把实践、案例和论文提前，是为了让三科共享同一个知识体系：</p>
+<ul><li>学数据库时，同时为实践项目做数据设计。</li><li>学质量属性时，同时形成案例答案和论文段落。</li><li>学微服务时，同时记录架构决策、代价和实际效果。</li><li>做真题时，再用失分反向修正教材和项目素材。</li></ul>
+<p>只要每周持续投入、每月用结果验收，并在最后三个月完成足量机考和论文训练，前端背景完全可以建立起通过考试所需的系统架构知识体系。</p></article>
+      <nav class="pager" aria-label="章节翻页">
+    <span></span>
+    <span></span>
+  </nav>
+    </main>
+    <aside class="toc">
+      <p class="eyebrow">本页目录</p>
+      <a class="toc-level-2" href="#0-先看这一页-怎样执行这份计划">0. 先看这一页：怎样执行这份计划</a>
+<a class="toc-level-2" href="#1-目标定义与通过标准">1. 目标定义与通过标准</a>
+<a class="toc-level-3" href="#1-1-考试目标">1.1 考试目标</a>
+<a class="toc-level-3" href="#1-2-本计划的-完成-不是看完-而是达到以下状态">1.2 本计划的“完成”不是看完，而是达到以下状态</a>
+<a class="toc-level-2" href="#2-当前基础分析与总体策略">2. 当前基础分析与总体策略</a>
+<a class="toc-level-3" href="#2-1-已有优势">2.1 已有优势</a>
+<a class="toc-level-3" href="#2-2-主要缺口">2.2 主要缺口</a>
+<a class="toc-level-3" href="#2-3-学习顺序">2.3 学习顺序</a>
+<a class="toc-level-2" href="#3-教材-视频-题库与工具">3. 教材、视频、题库与工具</a>
+<a class="toc-level-3" href="#3-1-必备教材-只买这三本即可开始">3.1 必备教材：只买这三本即可开始</a>
+<a class="toc-level-3" href="#3-2-主线视频-选择一套-完整跟随">3.2 主线视频：选择一套，完整跟随</a>
+<a class="toc-level-3" href="#3-3-零基础补课视频-遇到对应月份再看-不要一次收藏后全部开学">3.3 零基础补课视频：遇到对应月份再看，不要一次收藏后全部开学</a>
+<a class="toc-level-3" href="#3-4-真题与题库">3.4 真题与题库</a>
+<a class="toc-level-3" href="#3-5-实践工具">3.5 实践工具</a>
+<a class="toc-level-2" href="#4-学习闭环与笔记系统">4. 学习闭环与笔记系统</a>
+<a class="toc-level-3" href="#4-1-每个知识单元采用-学-画-题-讲-复盘">4.1 每个知识单元采用“学—画—题—讲—复盘”</a>
+<a class="toc-level-3" href="#4-2-建议的项目目录">4.2 建议的项目目录</a>
+<a class="toc-level-3" href="#4-3-错题记录格式">4.3 错题记录格式</a>
+<a class="toc-level-3" href="#4-4-记忆策略">4.4 记忆策略</a>
+<a class="toc-level-2" href="#5-每周时间安排">5. 每周时间安排</a>
+<a class="toc-level-3" href="#5-1-标准周-8-10-小时">5.1 标准周：8～10 小时</a>
+<a class="toc-level-3" href="#5-2-忙碌周-最低-4-小时">5.2 忙碌周：最低 4 小时</a>
+<a class="toc-level-3" href="#5-3-冲刺周-12-15-小时">5.3 冲刺周：12～15 小时</a>
+<a class="toc-level-2" href="#6-阶段总览">6. 阶段总览</a>
+<a class="toc-level-2" href="#7-62-周详细执行计划">7. 62 周详细执行计划</a>
+<a class="toc-level-3" href="#使用规则">使用规则</a>
+<a class="toc-level-3" href="#本章资源快捷入口">本章资源快捷入口</a>
+<a class="toc-level-3" href="#p0-启动与诊断-w01-w02">P0：启动与诊断（W01～W02）</a>
+<a class="toc-level-3" href="#p1-计算机与软件基础-w03-w19">P1：计算机与软件基础（W03～W19）</a>
+<a class="toc-level-3" href="#p2-软件工程与架构核心-w20-w36">P2：软件工程与架构核心（W20～W36）</a>
+<a class="toc-level-3" href="#p3-专题架构与第一轮真题-w37-w45">P3：专题架构与第一轮真题（W37～W45）</a>
+<a class="toc-level-3" href="#p4-案例与论文强化-w46-w54">P4：案例与论文强化（W46～W54）</a>
+<a class="toc-level-3" href="#p5-全真模拟与补弱-w55-w60">P5：全真模拟与补弱（W55～W60）</a>
+<a class="toc-level-3" href="#p6-考前与考试-w61-w62">P6：考前与考试（W61～W62）</a>
+<a class="toc-level-2" href="#8-各模块难点-掌握深度与实践方法">8. 各模块难点、掌握深度与实践方法</a>
+<a class="toc-level-2" href="#9-贯穿式架构实践项目">9. 贯穿式架构实践项目</a>
+<a class="toc-level-3" href="#9-1-项目题目">9.1 项目题目</a>
+<a class="toc-level-3" href="#9-2-建议技术栈">9.2 建议技术栈</a>
+<a class="toc-level-3" href="#9-3-八步演化">9.3 八步演化</a>
+<a class="toc-level-3" href="#9-4-必须产出的架构材料">9.4 必须产出的架构材料</a>
+<a class="toc-level-3" href="#9-5-adr-模板">9.5 ADR 模板</a>
+<a class="toc-level-2" href="#10-综合知识备考方法">10. 综合知识备考方法</a>
+<a class="toc-level-3" href="#10-1-三轮策略">10.1 三轮策略</a>
+<a class="toc-level-3" href="#10-2-单选题处理">10.2 单选题处理</a>
+<a class="toc-level-2" href="#11-案例分析备考方法">11. 案例分析备考方法</a>
+<a class="toc-level-3" href="#11-1-标准答题结构">11.1 标准答题结构</a>
+<a class="toc-level-3" href="#11-2-案例训练的四遍法">11.2 案例训练的四遍法</a>
+<a class="toc-level-3" href="#11-3-选答题策略">11.3 选答题策略</a>
+<a class="toc-level-2" href="#12-论文备考系统">12. 论文备考系统</a>
+<a class="toc-level-3" href="#12-1-项目素材必须来自真实经历">12.1 项目素材必须来自真实经历</a>
+<a class="toc-level-3" href="#12-2-八个优先主题">12.2 八个优先主题</a>
+<a class="toc-level-3" href="#12-3-训练用结构">12.3 训练用结构</a>
+<a class="toc-level-3" href="#12-4-每篇论文自评表">12.4 每篇论文自评表</a>
+<a class="toc-level-3" href="#12-5-机考输入训练">12.5 机考输入训练</a>
+<a class="toc-level-2" href="#13-月度验收与进度仪表盘">13. 月度验收与进度仪表盘</a>
+<a class="toc-level-2" href="#14-中断-落后和时间不足时的处理">14. 中断、落后和时间不足时的处理</a>
+<a class="toc-level-3" href="#14-1-落后一周">14.1 落后一周</a>
+<a class="toc-level-3" href="#14-2-落后两到三周">14.2 落后两到三周</a>
+<a class="toc-level-3" href="#14-3-中断一个月以上">14.3 中断一个月以上</a>
+<a class="toc-level-2" href="#15-报名-机考-健康与考前后勤">15. 报名、机考、健康与考前后勤</a>
+<a class="toc-level-3" href="#15-1-报名检查">15.1 报名检查</a>
+<a class="toc-level-3" href="#15-2-机考专项">15.2 机考专项</a>
+<a class="toc-level-3" href="#15-3-健康与状态">15.3 健康与状态</a>
+<a class="toc-level-2" href="#16-前-14-天启动清单">16. 前 14 天启动清单</a>
+<a class="toc-level-2" href="#17-资料来源与版本核对">17. 资料来源与版本核对</a>
+<a class="toc-level-2" href="#18-最终提醒">18. 最终提醒</a>
+    </aside>
+  </div>
+  <footer>离线 HTML 版本 · 生成自项目中的 Markdown 文档 · 2026-08-19</footer>
+  <script>
+    document.querySelectorAll("[data-plan-check]").forEach((box) => {
+      const key = "sa-plan:" + location.pathname + ":" + box.dataset.planCheck;
+      try { box.checked = localStorage.getItem(key) === "1"; } catch {}
+      box.addEventListener("change", () => {
+        try { localStorage.setItem(key, box.checked ? "1" : "0"); } catch {}
+      });
+    });
+  </script>
+</body>
+</html>
