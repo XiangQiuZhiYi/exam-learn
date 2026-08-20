@@ -3,9 +3,6 @@ name: Deploy study plan to GitHub Pages
 on:
   push:
     branches: [main]
-    paths:
-      - "html/**"
-      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
