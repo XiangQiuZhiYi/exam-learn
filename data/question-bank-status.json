@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "totals": {
+    "papers": 13,
+    "completePapers": 2,
+    "parsedQuestions": 939,
+    "scoreableQuestions": 845,
+    "reviewNeeded": 167
+  },
+  "papers": [
+    {
+      "year": 2009,
+      "status": "complete",
+      "expectedQuestions": 75,
+      "parsedQuestions": 75,
+      "scoreableQuestions": 75,
+      "warnings": []
+    },
+    {
+      "year": 2010,
+      "status": "partial",
+      "expectedQuestions": 75,
+      "parsedQuestions": 75,
+      "scoreableQuestions": 74,
+      "warnings": []
+    },
+    {
+      "year": 2011,
+      "status": "partial",
+      "expectedQuestions": 75,
+      "parsedQuestions": 75,
+      "scoreableQuestions": 74,
+      "warnings": []
+    },
+    {
+      "year": 2012,
+      "status": "partial",
+      "expectedQuestions": 75,
+      "parsedQuestions": 75,
+      "scoreableQuestions": 72,
+      "warnings": []
+    },
+    {
+      "year": 2013,
+      "status": "complete",
+      "expectedQuestions": 75,
+      "parsedQuestions": 75,
+      "scoreableQuestions": 75,
+      "warnings": []
+    },
+    {
+      "year": 2014,
+      "status": "partial",
+      "expectedQuestions": 75,
+      "parsedQuestions": 75,
+      "scoreableQuestions": 74,
+      "warnings": []
+    },
+    {
+      "year": 2015,
+      "status": "partial",
+      "expectedQuestions": 75,
+      "parsedQuestions": 75,
+      "scoreableQuestions": 74,
+      "warnings": []
+    },
+    {
+      "year": 2016,
+      "status": "partial",
+      "expectedQuestions": 75,
+      "parsedQuestions": 75,
+      "scoreableQuestions": 73,
+      "warnings": []
+    },
+    {
+      "year": 2017,
+      "status": "partial",
+      "expectedQuestions": 75,
+      "parsedQuestions": 75,
+      "scoreableQuestions": 73,
+      "warnings": [
+        "答案详解只能可靠定位 74/75 个答案"
+      ]
+    },
+    {
+      "year": 2018,
+      "status": "partial",
+      "expectedQuestions": 75,
+      "parsedQuestions": 75,
+      "scoreableQuestions": 74,
+      "warnings": []
+    },
+    {
+      "year": 2019,
+      "status": "partial",
+      "expectedQuestions": 75,
+      "parsedQuestions": 75,
+      "scoreableQuestions": 0,
+      "warnings": [
+        "OCR 定位到 70/75 个候选答案；逐题视觉核验前均不参与网页判分"
+      ]
+    },
+    {
+      "year": 2020,
+      "status": "partial",
+      "expectedQuestions": 75,
+      "parsedQuestions": 42,
+      "scoreableQuestions": 37,
+      "warnings": [
+        "资料正文只能可靠拆分 42/75 题，未生成缺失题目",
+        "PDF 正文明确注明为考生回忆的不完整题集，不能作为 75 题整卷计分"
+      ]
+    },
+    {
+      "year": 2021,
+      "status": "partial",
+      "expectedQuestions": 75,
+      "parsedQuestions": 72,
+      "scoreableQuestions": 70,
+      "warnings": [
+        "资料正文只能可靠拆分 72/75 题，未生成缺失题目",
+        "PDF 尾部包含重复拼接和无答案题段，解析器仅采用前 51 个带解答题组"
+      ]
+    }
+  ]
+}

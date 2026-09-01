@@ -1,1 +1,5 @@
-
+materials.local.json
+materials/local/*.json
+materials/local/**/*.json
+html/local/*
+!html/local/question-bank-data.js
